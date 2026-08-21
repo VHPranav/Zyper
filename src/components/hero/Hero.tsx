@@ -238,19 +238,6 @@ export default function HeroSection() {
               pointerEvents: "none",
             }}
           >
-            {/* Poster image fallback */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={slide.poster}
-              alt=""
-              style={{
-                position: "absolute",
-                inset: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
             {/* HTML5 Video element */}
             <video
               ref={(el) => {
@@ -261,7 +248,16 @@ export default function HeroSection() {
               loop
               muted
               playsInline
-              poster={slide.poster}
+              onCanPlayThrough={() => {
+                if (typeof window !== "undefined") {
+                  window.dispatchEvent(new CustomEvent("hero-video-ready"));
+                }
+              }}
+              onPlaying={() => {
+                if (typeof window !== "undefined") {
+                  window.dispatchEvent(new CustomEvent("hero-video-ready"));
+                }
+              }}
               style={{
                 position: "absolute",
                 inset: 0,

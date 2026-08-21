@@ -16,7 +16,16 @@ export default function LiquorHero() {
           muted
           loop
           playsInline
-          poster="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1920&q=80"
+          onCanPlayThrough={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("hero-video-ready"));
+            }
+          }}
+          onPlaying={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("hero-video-ready"));
+            }
+          }}
           className="w-full h-full object-cover"
           aria-hidden="true"
         >

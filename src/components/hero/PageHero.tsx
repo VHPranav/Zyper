@@ -24,7 +24,16 @@ export default function PageHero({ label, title, subtitle, videoUrl, posterUrl }
           muted
           loop
           playsInline
-          poster={posterUrl}
+          onCanPlayThrough={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("hero-video-ready"));
+            }
+          }}
+          onPlaying={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(new CustomEvent("hero-video-ready"));
+            }
+          }}
           className="w-full h-full object-cover"
           aria-hidden="true"
         >
