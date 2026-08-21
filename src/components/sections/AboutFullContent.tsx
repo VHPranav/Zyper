@@ -111,7 +111,7 @@ export default function AboutFullContent() {
             <h2
               className="heading-gradient-dark"
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontWeight: 600,
                 fontSize: "clamp(3rem, 6vw, 67px)",
                 lineHeight: 1.18,
@@ -126,7 +126,7 @@ export default function AboutFullContent() {
           <Reveal delay={0.1}>
             <p
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontWeight: 500,
                 fontSize: "16.6px",
                 lineHeight: "22px",
@@ -152,7 +152,7 @@ export default function AboutFullContent() {
             <Reveal key={v.title} delay={i * 0.08}>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontWeight: 400,
                   fontSize: "16.9px",
                   lineHeight: "23px",

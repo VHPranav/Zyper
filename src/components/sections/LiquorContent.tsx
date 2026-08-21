@@ -303,7 +303,7 @@ export default function LiquorContent() {
                     gap: "8px",
                     padding: "12px 24px",
                     borderRadius: "12px",
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "0.85rem",
                     fontWeight: 600,
                     color: "#000000",

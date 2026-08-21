@@ -209,7 +209,7 @@ export default function GallerySection() {
                       style={{
                         fontSize: "clamp(1.2rem, 1.6vw, 1.75rem)",
                         lineHeight: "1.3",
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                       }}
                     >
                       <span className="heading-gradient-dark font-semibold">
@@ -224,7 +224,7 @@ export default function GallerySection() {
                   <Reveal delay={0.3} className="mb-7">
                     <p
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontWeight: 400,
                         fontSize: "0.875rem",
                         lineHeight: "1.7",

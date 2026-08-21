@@ -232,7 +232,7 @@ export default function Header() {
                             display: "inline-flex",
                             alignItems: "center",
                             gap: "6px",
-                            fontFamily: "'Inter', sans-serif",
+                            fontFamily: "'Plus Jakarta Sans', sans-serif",
                             fontSize: "0.875rem",
                             fontWeight: isActive ? 700 : 600,
                             color: isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.75)",
@@ -277,7 +277,7 @@ export default function Header() {
                       key={item.name}
                       href={item.href}
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "0.875rem",
                         fontWeight: isActive ? 700 : 600,
                         color: isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.75)",
@@ -313,7 +313,7 @@ export default function Header() {
                   gap: "8px",
                   padding: "12px 24px",
                   borderRadius: "12px",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "0.85rem",
                   fontWeight: 600,
                   color: isLightBg ? "#FFFFFF" : "#000000",
@@ -485,7 +485,7 @@ export default function Header() {
                   <div>
                     <h4
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "0.875rem",
                         fontWeight: 600,
                         color: "#FFFFFF",
@@ -497,7 +497,7 @@ export default function Header() {
                     </h4>
                     <p
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "0.75rem",
                         color: "rgba(255, 255, 255, 0.55)",
                         marginTop: "4px",
@@ -551,7 +551,7 @@ export default function Header() {
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "1rem",
                     fontWeight: 600,
                     color: "#FFFFFF",
@@ -573,7 +573,7 @@ export default function Header() {
                 borderRadius: "12px",
                 background: "#FFFFFF",
                 color: "#000000",
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontSize: "0.9rem",
                 fontWeight: 600,
                 border: "none",

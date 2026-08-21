@@ -107,7 +107,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
               </div>
               <span
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "1.35rem",
                   fontWeight: 700,
                   letterSpacing: "-0.01em",
@@ -132,7 +132,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "12px",
                     lineHeight: "16px",
                     color: isLightCard ? "rgba(10,10,10,0.75)" : "rgba(252,248,241,0.75)",
@@ -153,7 +153,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "12px",
                     lineHeight: "16px",
                     color: isLightCard ? "rgba(10,10,10,0.75)" : "rgba(252,248,241,0.75)",
@@ -174,7 +174,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "12px",
                     lineHeight: "16px",
                     color: isLightCard ? "rgba(10,10,10,0.75)" : "rgba(252,248,241,0.75)",
@@ -212,7 +212,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                   <Link
                     href={href}
                     style={{
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
                       fontSize: "13.5px",
                       lineHeight: "18px",
                       color: isLightCard ? "#0A0A0A" : "#FCF8F1",
@@ -256,7 +256,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                     <a
                       href={href}
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "13.3px",
                         lineHeight: "18px",
                         color: isLightCard ? "rgba(10,10,10,0.6)" : "rgba(242, 236, 226, 0.5)",
@@ -272,7 +272,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                     <Link
                       href={href}
                       style={{
-                        fontFamily: "'Inter', sans-serif",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "13.3px",
                         lineHeight: "18px",
                         color: isLightCard ? "rgba(10,10,10,0.6)" : "rgba(242, 236, 226, 0.5)",
@@ -327,7 +327,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
         >
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontSize: "11.5px",
               lineHeight: "16px",
               color: isLightCard ? "rgba(10, 10, 10, 0.55)" : "rgba(252, 248, 241, 0.45)",
@@ -371,7 +371,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 />
                 <span
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "10px",
                     fontWeight: 600,
                     letterSpacing: "0.1em",

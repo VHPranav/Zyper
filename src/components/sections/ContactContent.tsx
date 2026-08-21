@@ -112,7 +112,7 @@ export default function ContactContent() {
           <h1
             style={{
               textAlign: "center",
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Plus Jakarta Sans', sans-serif",
               fontWeight: 500,
               fontSize: "clamp(2.6rem, 4.8vw, 4.4rem)",
               letterSpacing: "-0.04em",
@@ -179,7 +179,7 @@ export default function ContactContent() {
               <div>
                 <p
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "clamp(1.25rem, 1.85vw, 1.65rem)",
                     lineHeight: "1.38",
                     letterSpacing: "-0.02em",
@@ -197,7 +197,7 @@ export default function ContactContent() {
                 <a
                   href={`mailto:${siteConfig.email}`}
                   style={{
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     fontSize: "clamp(1.1rem, 1.35vw, 1.3rem)",
                     fontWeight: 500,
                     color: "#FFFFFF",
@@ -391,7 +391,7 @@ export default function ContactContent() {
               <h2
                 style={{
                   textAlign: "center",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "clamp(1.15rem, 1.55vw, 1.4rem)",
                   lineHeight: "1.4",
                   letterSpacing: "-0.02em",
@@ -429,7 +429,7 @@ export default function ContactContent() {
                     border: "1px solid rgba(0, 0, 0, 0.06)",
                     padding: "16px 22px",
                     fontSize: "14px",
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     color: "#111111",
                     outline: "none",
                     boxSizing: "border-box",
@@ -452,7 +452,7 @@ export default function ContactContent() {
                     border: "1px solid rgba(0, 0, 0, 0.06)",
                     padding: "16px 22px",
                     fontSize: "14px",
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     color: "#111111",
                     outline: "none",
                     boxSizing: "border-box",
@@ -473,7 +473,7 @@ export default function ContactContent() {
                       border: "1px solid rgba(0, 0, 0, 0.06)",
                       padding: "16px 22px",
                       fontSize: "14px",
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
                       color: "#111111",
                       outline: "none",
                       boxSizing: "border-box",
@@ -517,7 +517,7 @@ export default function ContactContent() {
                     border: "1px solid rgba(0, 0, 0, 0.06)",
                     padding: "18px 22px",
                     fontSize: "14px",
-                    fontFamily: "'Inter', sans-serif",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
                     color: "#111111",
                     outline: "none",
                     resize: "none",
@@ -554,7 +554,7 @@ export default function ContactContent() {
                   <span
                     style={{
                       fontSize: "12px",
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
                       color: "rgba(17, 17, 17, 0.65)",
                       fontWeight: 500,
                     }}
@@ -574,7 +574,7 @@ export default function ContactContent() {
                       gap: "10px",
                       padding: "14px 38px",
                       borderRadius: "100px",
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
                       fontWeight: 600,
                       fontSize: "14px",
                       color: "#FFFFFF",
@@ -619,7 +619,7 @@ export default function ContactContent() {
             <Reveal delay={0.1}>
               <p
                 style={{
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "clamp(1.2rem, 1.65vw, 1.5rem)",
                   lineHeight: "1.45",
                   letterSpacing: "-0.02em",
@@ -647,7 +647,7 @@ export default function ContactContent() {
                   gap: "10px",
                   padding: "14px 32px",
                   borderRadius: "100px",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontWeight: 600,
                   fontSize: "14px",
                   color: "#FFFFFF",
@@ -701,7 +701,7 @@ export default function ContactContent() {
                       padding: "9px 20px",
                       borderRadius: "100px",
                       fontSize: "12px",
-                      fontFamily: "'Inter', sans-serif",
+                      fontFamily: "'Plus Jakarta Sans', sans-serif",
                       fontWeight: 600,
                       cursor: "pointer",
                       border: "none",
@@ -754,7 +754,7 @@ export default function ContactContent() {
                       >
                         <h3
                           style={{
-                            fontFamily: "'Inter', sans-serif",
+                            fontFamily: "'Plus Jakarta Sans', sans-serif",
                             fontWeight: 500,
                             color: "#111111",
                             fontSize: "15px",
@@ -784,7 +784,7 @@ export default function ContactContent() {
                       {isOpen && (
                         <p
                           style={{
-                            fontFamily: "'Inter', sans-serif",
+                            fontFamily: "'Plus Jakarta Sans', sans-serif",
                             fontSize: "14px",
                             lineHeight: "1.65",
                             color: "rgba(17, 17, 17, 0.72)",

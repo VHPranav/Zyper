@@ -30,7 +30,7 @@ export default function CTASection({ theme = "light" }: CTASectionProps) {
             <h2
               id="cta-heading"
               style={{
-                fontFamily: "'Inter', sans-serif",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontWeight: 500,
                 fontSize: "clamp(1.75rem, 2.6vw, 2.25rem)",
                 lineHeight: "1.28",
@@ -62,7 +62,7 @@ export default function CTASection({ theme = "light" }: CTASectionProps) {
                   borderRadius: "100px",
                   background: isDark ? "#FFFFFF" : "#000000",
                   color: isDark ? "#0A0A0A" : "#FCF8F1",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "14.4px",
                   fontWeight: 500,
                   boxShadow: isDark ? "0 4px 16px rgba(255, 255, 255, 0.15)" : "0 4px 16px rgba(0, 0, 0, 0.12)",
@@ -85,7 +85,7 @@ export default function CTASection({ theme = "light" }: CTASectionProps) {
                   background: "transparent",
                   border: isDark ? "1px solid rgba(255, 255, 255, 0.2)" : "1px solid rgba(0, 0, 0, 0.18)",
                   color: isDark ? "#FFFFFF" : "#000000",
-                  fontFamily: "'Inter', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "14.4px",
                   fontWeight: 500,
                 }}

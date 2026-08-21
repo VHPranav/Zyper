@@ -52,7 +52,7 @@ function StatItem({
       <span
         className="font-medium tabular-nums text-[#0A0A0A]"
         style={{
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "'Plus Jakarta Sans', sans-serif",
           fontSize: "clamp(3rem, 5vw, 5.5rem)",
           letterSpacing: "-0.055em",
           lineHeight: 1,
