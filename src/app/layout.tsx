@@ -37,11 +37,12 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
       { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "32x32" },
     ],
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
   authors: [{ name: "ZYPER VENTURES" }],
   creator: "ZYPER VENTURES",
@@ -65,9 +66,10 @@ export const metadata: Metadata = {
     siteName: "ZYPER VENTURES",
     images: [
       {
-        url: "/og-image.svg",
+        url: "https://www.zyper.co.in/og-image.png",
         width: 1200,
         height: 630,
+        type: "image/png",
         alt: "ZYPER VENTURES — Real Estate · Construction · Beverages",
       },
     ],
@@ -79,7 +81,7 @@ export const metadata: Metadata = {
     title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     description:
       "A diversified business group excelling in Real Estate, Construction, and Beverages in Kerala, India.",
-    images: ["/og-image.svg"],
+    images: ["https://www.zyper.co.in/og-image.png"],
   },
 };
 
