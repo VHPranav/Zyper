@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zyperventures.com"),
+  metadataBase: new URL("https://www.zyper.co.in"),
   title: {
     default: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     template: "%s | ZYPER VENTURES",
@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     "premium beverages distribution",
     "luxury properties",
   ],
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   authors: [{ name: "ZYPER VENTURES" }],
   creator: "ZYPER VENTURES",
   publisher: "ZYPER VENTURES",
@@ -53,15 +61,25 @@ export const metadata: Metadata = {
     title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     description:
       "A diversified business group excelling in Real Estate, Construction, and Beverages in Kerala, India.",
+    url: "https://www.zyper.co.in",
     siteName: "ZYPER VENTURES",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "ZYPER VENTURES — Real Estate · Construction · Beverages",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZYPER VENTURES",
+    title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     description:
       "A diversified business group excelling in Real Estate, Construction, and Beverages in Kerala, India.",
+    images: ["/og-image.svg"],
   },
 };
 

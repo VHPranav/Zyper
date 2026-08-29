@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Italianno&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap');
+      .cursive-logo {
+        font-family: 'Italianno', 'Playfair Display', 'Brush Script MT', cursive;
+        font-size: 250px;
+        font-style: italic;
+        font-weight: 500;
+        fill: #0A0A0A;
+        text-anchor: middle;
+        dominant-baseline: central;
+      }
+    </style>
+  </defs>
+
+  <!-- Crisp Pure White Base with Abundant Whitespace -->
+  <rect width="512" height="512" rx="128" fill="#FFFFFF" />
+  <rect width="508" height="508" x="2" y="2" rx="126" fill="none" stroke="#E5E7EB" stroke-width="2" />
+
+  <!-- Minimalist Black Cursive Wordmark -->
+  <text x="256" y="256" class="cursive-logo">Zyper</text>
+</svg>
