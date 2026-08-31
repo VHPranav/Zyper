@@ -14,7 +14,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Real Estate",
   description:
-    "ZYPER Real Estate — premium residential and commercial properties in Kerala. Transparent, quality-first, customer-centric.",
+    "ZYPER Real Estate — premium residential and commercial properties in Bengaluru & Karnataka. Transparent, quality-first, customer-centric.",
 };
 
 export default function RealEstatePage() {

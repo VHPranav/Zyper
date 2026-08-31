@@ -334,7 +334,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
               maxWidth: "880px",
             }}
           >
-            ZYPER VENTURES is a diversified business group operating across Real Estate, Construction, and Liquor &amp; Beverages in Kerala, India. Built on the core principles of trust, quality, transparency, and long-term value creation. All corporate content and division assets are managed under strict regulatory compliance.
+            ZYPER VENTURES is a diversified business group operating across Real Estate, Construction, and Liquor &amp; Beverages in Bengaluru, Karnataka, India. Built on the core principles of trust, quality, transparency, and long-term value creation. All corporate content and division assets are managed under strict regulatory compliance.
           </p>
         </div>
 
@@ -355,7 +355,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
               { Icon: HardHat, label: "CONSTRUCTION" },
               { Icon: Wine, label: "BEVERAGES" },
               { Icon: CheckCircle2, label: "ISO CERTIFIED" },
-              { Icon: ShieldCheck, label: "KERALA OPERATIONAL" },
+              { Icon: ShieldCheck, label: "KARNATAKA OPERATIONAL" },
             ].map(({ Icon, label }) => (
               <div
                 key={label}
@@ -384,15 +384,46 @@ export default function Footer({ theme = "dark" }: FooterProps) {
             ))}
           </div>
 
-          <p
-            style={{
-              fontFamily: "monospace",
-              fontSize: "11px",
-              color: isLightCard ? "rgba(10, 10, 10, 0.4)" : "rgba(252, 248, 241, 0.3)",
-            }}
-          >
-            &copy; {year} {siteConfig.name}. All rights reserved.
-          </p>
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p
+              style={{
+                fontFamily: "monospace",
+                fontSize: "11px",
+                color: isLightCard ? "rgba(10, 10, 10, 0.4)" : "rgba(252, 248, 241, 0.3)",
+              }}
+            >
+              &copy; {year} {siteConfig.name}. All rights reserved.
+            </p>
+            <span
+              className="hidden sm:inline"
+              style={{
+                fontSize: "11px",
+                color: isLightCard ? "rgba(10, 10, 10, 0.2)" : "rgba(252, 248, 241, 0.2)",
+              }}
+            >
+              |
+            </span>
+            <p
+              style={{
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                fontSize: "11px",
+                color: isLightCard ? "rgba(10, 10, 10, 0.5)" : "rgba(252, 248, 241, 0.4)",
+              }}
+            >
+              Powered by{" "}
+              <a
+                href="https://outriftmedia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:underline transition-opacity"
+                style={{
+                  color: isLightCard ? "#0A0A0A" : "#FFFFFF",
+                }}
+              >
+                outriftmedia
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

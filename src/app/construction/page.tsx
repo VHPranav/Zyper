@@ -12,7 +12,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Construction",
   description:
-    "ZYPER Construction — precision engineering and quality builds for residential and commercial projects across Kerala.",
+    "ZYPER Construction — precision engineering and quality builds for residential and commercial projects across Bengaluru and Karnataka.",
 };
 
 export default function ConstructionPage() {

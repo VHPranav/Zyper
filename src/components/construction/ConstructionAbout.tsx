@@ -54,7 +54,7 @@ export default function ConstructionAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Our specialized site engineers operate across Kerala with deep expertise in monsoon resilience, geotechnical integrity, and modern construction tech.
+                Our specialized site engineers operate across Bengaluru and Karnataka with deep expertise in structural resilience, geotechnical integrity, and modern construction tech.
               </p>
             </Reveal>
           </div>

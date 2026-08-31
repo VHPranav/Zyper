@@ -19,7 +19,7 @@ const capabilities = [
   },
   {
     title: "Heritage Restoration & Adaptive Renovation",
-    desc: "Structural strengthening, moisture-proofing, and modern retrofitting while honoring historic Kerala vernacular architecture.",
+    desc: "Structural strengthening, moisture-proofing, and modern retrofitting while honoring regional vernacular architecture and heritage.",
   },
   {
     title: "Civil Engineering & Geotechnical Consulting",

@@ -80,7 +80,7 @@ export default function ConstructionContent() {
                   lineHeight: "1.7",
                 }}
               >
-                Our teams operate across Kerala with a deep understanding of local
+                Our teams operate across Bengaluru and Karnataka with a deep understanding of local
                 terrain, climate, and regulatory requirements.
               </p>
             </Reveal>

@@ -41,7 +41,7 @@ export default function BeverageAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                ZYPER Beverages oversees the licensed trading and distribution of fine spirits and premium beverage portfolios across Kerala.
+                ZYPER Beverages oversees the licensed trading and distribution of fine spirits and premium beverage portfolios across Bengaluru district and Karnataka.
               </p>
             </Reveal>
 

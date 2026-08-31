@@ -47,7 +47,7 @@ const slides: SlideData[] = [
     poster: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=1920&q=80",
     title: "CRAFTED FOR DISCERNING TASTE",
     description:
-      "ZYPER Beverages oversees licensed trading and distribution of fine spirits and beverages across Kerala, adhering to strict compliance and ethical standards.",
+      "ZYPER Beverages oversees licensed trading and distribution of fine spirits and beverages across Bengaluru and Karnataka, adhering to strict compliance and ethical standards.",
     pillTagline: "Interested in premium beverage distribution?",
     buttonText: "Explore Beverages",
     buttonHref: "/liquor",

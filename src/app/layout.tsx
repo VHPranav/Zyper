@@ -24,13 +24,15 @@ export const metadata: Metadata = {
     template: "%s | ZYPER VENTURES",
   },
   description:
-    "ZYPER VENTURES is a diversified group excelling in Real Estate, Construction, and Premium Beverages across Kerala. Built on trust, quality, and long-term value.",
+    "ZYPER VENTURES is a diversified group excelling in Real Estate, Construction, and Premium Beverages across Bengaluru & Karnataka. Built on trust, quality, and long-term value.",
   keywords: [
     "ZYPER",
     "ZYPER VENTURES",
-    "real estate Kerala",
-    "luxury villas Kochi",
-    "construction Kerala",
+    "real estate Bengaluru",
+    "real estate Bangalore",
+    "luxury villas Bengaluru",
+    "construction Bengaluru",
+    "construction Karnataka",
     "turnkey structural engineering",
     "premium beverages distribution",
     "luxury properties",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     description:
-      "A diversified business group excelling in Real Estate, Construction, and Beverages in Kerala, India.",
+      "A diversified business group excelling in Real Estate, Construction, and Beverages in Bengaluru, Karnataka, India.",
     url: "https://www.zyper.co.in",
     siteName: "ZYPER VENTURES",
     images: [
@@ -80,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
     description:
-      "A diversified business group excelling in Real Estate, Construction, and Beverages in Kerala, India.",
+      "A diversified business group excelling in Real Estate, Construction, and Beverages in Bengaluru, Karnataka, India.",
     images: ["https://www.zyper.co.in/og-image.png"],
   },
 };

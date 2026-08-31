@@ -12,7 +12,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
   description:
-    "ZYPER VENTURES is a diversified group excelling in Real Estate, Construction, and Premium Beverages across Kerala. Built on trust, quality, and long-term value.",
+    "ZYPER VENTURES is a diversified group excelling in Real Estate, Construction, and Premium Beverages across Bengaluru & Karnataka. Built on trust, quality, and long-term value.",
 };
 
 export default function HomePage() {

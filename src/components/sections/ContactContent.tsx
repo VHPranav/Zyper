@@ -18,7 +18,7 @@ const faqData: FAQItem[] = [
     category: "General",
     question: "What kind of businesses typically partner with ZYPER?",
     answer:
-      "We partner with individual investors, commercial enterprises, retail brands, licensed distributors, and institutional clients looking for high-quality real estate assets, construction delivery, and beverage distribution across Kerala.",
+      "We partner with individual investors, commercial enterprises, retail brands, licensed distributors, and institutional clients looking for high-quality real estate assets, construction delivery, and beverage distribution across Bengaluru and Karnataka.",
   },
   {
     category: "General",
@@ -30,13 +30,13 @@ const faqData: FAQItem[] = [
     category: "Real Estate",
     question: "What properties are currently available under ZYPER Real Estate?",
     answer:
-      "Our portfolio includes signature waterfront villas at The Azure Cove (Kochi), Grade-A commercial suites at Zyper Heights One (MG Road, Ernakulam), and eco-luxe residences at Serene Meadow Estates (Thrissur).",
+      "Our portfolio includes signature luxury villas at The Azure Cove (Indiranagar, Bengaluru), Grade-A commercial suites at Zyper Heights One (MG Road, CBD Bengaluru), and eco-luxe residences at Serene Meadow Estates (Whitefield, Bengaluru).",
   },
   {
     category: "Real Estate",
     question: "Are all real estate titles verified and RERA registered?",
     answer:
-      "Yes. Every ZYPER property comes with a 100% clear title guarantee, complete legal verifications, and compliance with Kerala RERA and environmental sustainability guidelines.",
+      "Yes. Every ZYPER property comes with a 100% clear title guarantee, complete legal verifications, and compliance with Karnataka RERA and environmental sustainability guidelines.",
   },
   {
     category: "Construction",

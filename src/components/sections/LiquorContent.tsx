@@ -12,11 +12,11 @@ const principles = [
 ];
 
 const areas = [
-  "Kochi Metropolitan Area",
-  "Thrissur District",
-  "Ernakulam & Surrounding",
-  "Kozhikode Region",
-  "Trivandrum City",
+  "Bengaluru Central & CBD",
+  "Whitefield & East Bengaluru",
+  "Electronic City & South Corridor",
+  "Peenya & North-West Industrial Corridor",
+  "Hebbal & North Gateway (Airport Road)",
 ];
 
 export default function LiquorContent() {
@@ -79,7 +79,7 @@ export default function LiquorContent() {
                 }}
               >
                 Our team brings deep industry knowledge and strong distribution
-                networks across Kerala, ensuring seamless supply chain operations.
+                networks across Bengaluru district and Karnataka, ensuring seamless supply chain operations.
               </p>
             </Reveal>
           </div>

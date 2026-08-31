@@ -13,7 +13,7 @@ import CTASection from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Beverages",
   description:
-    "ZYPER Beverages — premium licensed spirits and beverage distribution across Kerala. Quality, compliance, sophistication.",
+    "ZYPER Beverages — premium licensed spirits and beverage distribution across Bengaluru and Karnataka. Quality, compliance, sophistication.",
 };
 
 export default function LiquorPage() {

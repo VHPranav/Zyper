@@ -90,7 +90,7 @@ export default function Header() {
     },
     {
       title: "Beverages & Spirits",
-      desc: "Licensed distribution of premium alcoholic beverages across Kerala.",
+      desc: "Licensed distribution of premium alcoholic beverages across Bengaluru & Karnataka.",
       icon: "🍷",
       href: "/liquor",
     },

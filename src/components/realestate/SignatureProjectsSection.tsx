@@ -8,21 +8,21 @@ import { Reveal } from "@/components/ui/Reveal";
 const signatureProjects = [
   {
     name: "The Azure Cove",
-    location: "Marine Drive / Kochi",
+    location: "Indiranagar / Bengaluru",
     type: "Waterfront Luxury Villas",
     specs: "4 & 5 BHK · 4,200 – 6,500 sq.ft",
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
   },
   {
     name: "Zyper Heights One",
-    location: "MG Road / Ernakulam",
+    location: "MG Road / CBD Bengaluru",
     type: "Grade-A Commercial Tower",
     specs: "Corporate Suites & High-Street Retail",
     image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
   },
   {
     name: "Serene Meadow Estates",
-    location: "Puzhakkal / Thrissur",
+    location: "Whitefield / East Bengaluru",
     type: "Eco-Luxe Gated Enclave",
     specs: "3 & 4 BHK Luxury Residences",
     image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
@@ -69,7 +69,7 @@ export default function SignatureProjectsSection() {
                 maxWidth: "460px",
               }}
             >
-              Explore landmark residential addresses and commercial flagships setting new benchmarks in Kerala.
+              Explore landmark residential addresses and commercial flagships setting new benchmarks in Bengaluru & Karnataka.
             </p>
           </Reveal>
         </div>

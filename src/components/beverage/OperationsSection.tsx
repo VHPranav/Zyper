@@ -5,11 +5,11 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const areas = [
-  { name: "Kochi Metropolitan Area", hub: "Primary Central Distribution Hub" },
-  { name: "Ernakulam District & Ports", hub: "Logistics, Warehousing & Inland Depots" },
-  { name: "Thrissur Cultural Belt", hub: "Regional Distribution Facility" },
-  { name: "Kozhikode & Malabar Belt", hub: "Northern Transit Depot" },
-  { name: "Trivandrum Capital Region", hub: "Southern Operations & Liaison Center" },
+  { name: "Bengaluru Central & CBD", hub: "Primary Headquarters & Premium Trade Center" },
+  { name: "Peenya & North-West Industrial Corridor", hub: "Central Warehousing & Inland Logistics Depot" },
+  { name: "Whitefield & East Bengaluru Hub", hub: "High-Capacity Regional Distribution Depot" },
+  { name: "Electronic City & South Corridor", hub: "Southern Transit Gateway & Trade Hub" },
+  { name: "Hebbal & North Gateway (Airport Road)", hub: "Rapid Transit Depot & Cold-Chain Facility" },
 ];
 
 export default function OperationsSection() {
@@ -61,7 +61,7 @@ export default function OperationsSection() {
                 marginBottom: "40px",
               }}
             >
-              Strategic distribution hubs situated across Kerala&apos;s key transit routes, providing rapid, compliant turnaround for authorized trade.
+              Strategic distribution hubs situated across Bengaluru district&apos;s key transit routes and industrial corridors, providing rapid, compliant turnaround for authorized trade.
             </p>
           </Reveal>
 

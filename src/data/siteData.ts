@@ -6,7 +6,7 @@ export const siteConfig = {
   description: "Real Estate · Construction · Beverages",
   email: "zyperyard@gmail.com",
   phone: "+91 90727 27544",
-  address: "Kochi, Kerala, India",
+  address: "Bengaluru, Karnataka, India",
 };
 
 export const navLinks = [
@@ -25,7 +25,7 @@ export const heroSlides = [
     category: "Real Estate",
     title: ["YOUR VISION", "OF ELEVATED", "LIVING"],
     subtitle: "Premium residential & commercial spaces crafted with purpose.",
-    location: "Kerala, India",
+    location: "Bengaluru, Karnataka, India",
     videoUrl: "https://videos.pexels.com/video-files/7578545/7578545-uhd_2560_1440_25fps.mp4",
     posterUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80",
     cta: { label: "Explore Properties", href: "/real-estate" },
@@ -45,7 +45,7 @@ export const heroSlides = [
     category: "Beverages",
     title: ["CRAFTED FOR", "DISCERNING", "TASTE"],
     subtitle: "Curated spirits and beverages for the finest moments.",
-    location: "Licensed Distribution, Kerala",
+    location: "Licensed Distribution, Bengaluru & Karnataka",
     videoUrl: "https://videos.pexels.com/video-files/2171201/2171201-uhd_2560_1440_30fps.mp4",
     posterUrl: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=1920&q=80",
     cta: { label: "Our Collection", href: "/liquor" },
@@ -82,7 +82,7 @@ export const divisions = [
     label: "Beverages",
     headline: "Premium spirits, ethically distributed",
     description:
-      "Our beverages division operates with the highest standards of quality, regulatory compliance, and responsible distribution across Kerala and beyond.",
+      "Our beverages division operates with the highest standards of quality, regulatory compliance, and responsible distribution across Bengaluru district, Karnataka, and beyond.",
     image1: "https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=800&q=80",
     image2: "https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=800&q=80",
     href: "/liquor",

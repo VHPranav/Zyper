@@ -74,7 +74,7 @@ export default function LiquorHero() {
             lineHeight: "1.65",
           }}
         >
-          Licensed distribution of premium spirits and beverages across Kerala — quality assured, ethically operated.
+          Licensed distribution of premium spirits and beverages across Bengaluru & Karnataka — quality assured, ethically operated.
         </motion.p>
 
         {/* Scroll hint */}

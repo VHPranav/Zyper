@@ -8,7 +8,7 @@ const advantages = [
     number: "01",
     icon: Compass,
     title: "Prime Strategic Locations",
-    desc: "Every site is curated for connectivity, neighborhood prestige, infrastructure growth, and long-term capital appreciation across Kerala's top corridors.",
+    desc: "Every site is curated for connectivity, neighborhood prestige, infrastructure growth, and long-term capital appreciation across Bengaluru's top corridors.",
   },
   {
     number: "02",
