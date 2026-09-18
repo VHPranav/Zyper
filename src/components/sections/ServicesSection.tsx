@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { services } from "@/data/siteData";
 import { Reveal } from "@/components/ui/Reveal";
@@ -21,12 +22,49 @@ export default function ServicesSection() {
             <h2
               id="services-heading"
               className="heading-xl font-medium"
-              style={{ maxWidth: "560px", lineHeight: "1.1" }}
+              style={{ maxWidth: "800px", lineHeight: "1.1" }}
             >
               <span className="heading-gradient-dark font-semibold">
-                What we do.
+                Land solutions built for growing businesses
               </span>
             </h2>
+            <p
+              style={{
+                marginTop: "20px",
+                fontSize: "clamp(0.9rem, 1.1vw, 1.1rem)",
+                lineHeight: "1.7",
+                color: "rgba(0,0,0,0.55)",
+                maxWidth: "620px",
+              }}
+            >
+              We help corporates and businesses acquire and take over land across
+              Bengaluru, including industrial areas, with a focus on due
+              diligence, clear titles, and locations suited to long term
+              operations. Every acquisition is handled end to end, from
+              identification and negotiation to legal transfer and handover.
+            </p>
+            <div style={{ marginTop: "28px" }}>
+              <Link
+                href="/real-estate"
+                className="btn btn-dark w-fit group"
+              >
+                <span>Explore Real Estate</span>
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </Reveal>
       </div>

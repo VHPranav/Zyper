@@ -6,28 +6,28 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const capabilities = [
   {
-    title: "Luxury Residential Villas & Bungalows",
-    desc: "Bespoke structural engineering, cantilevered balconies, custom foundations, and high-spec architectural finishes.",
+    title: "Industrial Land Acquisition",
+    desc: "Sourcing and acquiring manufacturing plots, including KIADB allotted and privately held industrial land, for corporate expansion.",
   },
   {
-    title: "High-Density Apartment Complexes",
-    desc: "Multi-story residential towers built with advanced formwork, earthquake-resistant RCC frames, and integrated utility grids.",
+    title: "Corporate Land Takeover",
+    desc: "Managing the full transfer of existing land parcels to corporate ownership, including negotiation, agreements, and possession handover.",
   },
   {
-    title: "Commercial & Corporate Office Buildings",
-    desc: "Modern curtain-wall façades, column-free floor plates, fire-safety automation, and enterprise electrical infrastructure.",
+    title: "Warehouse and Logistics Park Land",
+    desc: "Identifying and securing land suited to warehousing, distribution centers, and logistics parks, with strong connectivity and access.",
   },
   {
-    title: "Heritage Restoration & Adaptive Renovation",
-    desc: "Structural strengthening, moisture-proofing, and modern retrofitting while honoring regional vernacular architecture and heritage.",
+    title: "SEZ and Industrial Park Land",
+    desc: "Acquisition support for land within special economic zones and notified industrial parks, aligned with sector specific regulations.",
   },
   {
-    title: "Civil Engineering & Geotechnical Consulting",
-    desc: "Sub-surface investigation, pile foundations, retaining wall engineering, and structural load auditing.",
+    title: "Land Due Diligence and Title Verification",
+    desc: "Independent verification of land title, survey records, and statutory approvals before any corporate investment is committed.",
   },
   {
-    title: "Turnkey Interior Fit-Outs & MEP Solutions",
-    desc: "Integrated mechanical, electrical, plumbing, HVAC ducting, and premium architectural interior craft.",
+    title: "Corporate Real Estate Solutions and Site Selection",
+    desc: "Site shortlisting and feasibility support based on connectivity, infrastructure access, and long term corporate property requirements.",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function CapabilitiesSection() {
                 marginBottom: "32px",
               }}
             >
-              What we build.
+              What We Build
             </h2>
           </Reveal>
 
@@ -80,7 +80,9 @@ export default function CapabilitiesSection() {
                 marginBottom: "40px",
               }}
             >
-              From landmark civil infrastructure to private residential sanctuaries, our engineering teams possess comprehensive turnkey capabilities.
+              From single industrial plots to large scale land aggregation, our
+              team manages the full range of land acquisition work for corporate
+              and industrial clients across Bengaluru and Karnataka.
             </p>
           </Reveal>
 

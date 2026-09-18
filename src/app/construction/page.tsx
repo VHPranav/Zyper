@@ -6,13 +6,15 @@ import {
   ConstructionAbout,
   ConstructionPhilosophy,
   CapabilitiesSection,
+  WhyChooseSection,
 } from "@/components/construction";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Construction",
+  title: "Industrial Land Acquisition Company | ZYPER Construction",
   description:
-    "ZYPER Construction — precision engineering and quality builds for residential and commercial projects across Bengaluru and Karnataka.",
+    "ZYPER handles industrial land acquisition and land takeover for corporate companies in Bengaluru and Karnataka, including KIADB plots and due diligence.",
+  keywords: "Industrial Land Acquisition",
 };
 
 export default function ConstructionPage() {
@@ -22,15 +24,20 @@ export default function ConstructionPage() {
       <main id="main-content">
         <PageHero
           label="02 / Construction"
-          title={["BUILT WITH", "PRECISION.", "BUILT TO LAST."]}
-          subtitle="Engineering excellence from foundation to finish, delivered with transparency and quality."
+          title={["LAND ACQUIRED WITH", "PRECISION. SECURED", "FOR GROWTH."]}
+          subtitle="Industrial land acquisition and corporate land takeover, delivered with transparency and full regulatory compliance."
           videoUrl="/videos/construction.mp4"
           posterUrl="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
         />
         <ConstructionAbout />
         <ConstructionPhilosophy />
         <CapabilitiesSection />
-        <CTASection />
+        <WhyChooseSection />
+        <CTASection
+          theme="dark"
+          heading="Let's talk about what you're building."
+          body="Whether it's a property, a project, or a partnership, we're happy to walk you through how ZYPER works. Book a call or drop us a line, and we'll get back to you directly."
+        />
       </main>
       <Footer />
     </>

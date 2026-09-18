@@ -55,12 +55,12 @@ export default function LiquorHero() {
             fontSize: "clamp(2.25rem, 4.2vw, 4.25rem)",
             lineHeight: 1.08,
             letterSpacing: "-0.035em",
-            maxWidth: "750px",
+            maxWidth: "920px",
           }}
         >
-          <span className="block">CRAFTED FOR</span>
-          <span className="block" style={{ color: "var(--amber-light)" }}>DISCERNING</span>
-          <span className="block">TASTE.</span>
+          <span className="block">EVERY GLASS HAS A STORY.</span>
+          <span className="block" style={{ color: "var(--amber-light)" }}>WE MAKE SURE</span>
+          <span className="block">IT ARRIVES.</span>
         </motion.h1>
 
         <motion.p
@@ -74,7 +74,7 @@ export default function LiquorHero() {
             lineHeight: "1.65",
           }}
         >
-          Licensed distribution of premium spirits and beverages across Bengaluru & Karnataka — quality assured, ethically operated.
+          Licensed distributors of premium spirits and beverages across Bengaluru and Karnataka, with export reach extending into East Africa, built on quality and trust.
         </motion.p>
 
         {/* Scroll hint */}

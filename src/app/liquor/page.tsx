@@ -11,9 +11,10 @@ import {
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Beverages",
+  title: "Zyper Beverages | Licensed Liquor Distributor in Bengaluru",
   description:
-    "ZYPER Beverages — premium licensed spirits and beverage distribution across Bengaluru and Karnataka. Quality, compliance, sophistication.",
+    "Zyper Beverages is a licensed distributor of wine, spirits and beer across Bengaluru and Karnataka, built on verified sourcing and reliable delivery.",
+  keywords: "Zyper Beverages",
 };
 
 export default function LiquorPage() {
@@ -26,7 +27,11 @@ export default function LiquorPage() {
         <PrinciplesSection />
         <OperationsSection />
         <GovernanceSection />
-        <CTASection theme="dark" />
+        <CTASection
+          theme="dark"
+          heading="Let's talk about what you're building."
+          body="Whether you're a retailer, a hospitality partner, or a brand principal exploring Karnataka or East Africa, we're happy to walk you through how ZYPER Beverages works. Book a call or drop us a line, and we'll get back to you directly."
+        />
       </main>
       <Footer theme="light" />
     </>

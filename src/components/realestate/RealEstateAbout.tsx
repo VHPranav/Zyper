@@ -26,7 +26,7 @@ export default function RealEstateAbout() {
               }}
             >
               <span className="heading-gradient-dark font-semibold">
-                Spaces that reflect how you live.
+                Real estate solutions built around your business requirements.
               </span>
             </h2>
           </Reveal>
@@ -41,7 +41,10 @@ export default function RealEstateAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                ZYPER Real Estate creates landmark properties at the intersection of architectural elegance and enduring livability.
+                ZYPER Real Estate specialises in corporate land acquisition and
+                land takeover for companies expanding their operations across
+                Bengaluru and Karnataka, including manufacturing, warehousing,
+                and industrial park requirements.
               </p>
             </Reveal>
 
@@ -54,7 +57,9 @@ export default function RealEstateAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                We operate with absolute transparency across title clarity, timelines, and building standards — ensuring confidence from day one.
+                We operate with complete transparency across title clarity,
+                timelines, and regulatory compliance, so every acquisition moves
+                forward with confidence from day one.
               </p>
             </Reveal>
           </div>
@@ -72,8 +77,8 @@ export default function RealEstateAbout() {
               }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80"
-                alt="ZYPER Real Estate interior"
+                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80"
+                alt="ZYPER Real Estate corporate land acquisition"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 60vw"

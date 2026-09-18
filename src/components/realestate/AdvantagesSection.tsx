@@ -1,6 +1,6 @@
 "use client";
 
-import { Compass, Sparkles, ShieldCheck, Award } from "lucide-react";
+import { Compass, Layers, ShieldCheck, Award } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const advantages = [
@@ -8,25 +8,25 @@ const advantages = [
     number: "01",
     icon: Compass,
     title: "Prime Strategic Locations",
-    desc: "Every site is curated for connectivity, neighborhood prestige, infrastructure growth, and long-term capital appreciation across Bengaluru's top corridors.",
+    desc: "Every parcel is identified for connectivity, industrial zoning, workforce access, and long-term appreciation across Bengaluru's key corridors.",
   },
   {
     number: "02",
-    icon: Sparkles,
-    title: "Thoughtful Architectural Design",
-    desc: "We marry tropical modernism with timeless aesthetics, prioritizing natural airflow, expansive ceiling heights, and practical luxury for modern living.",
+    icon: Layers,
+    title: "Structured Acquisition Process",
+    desc: "A disciplined, milestone-based process that takes a land requirement from initial mapping through to registered ownership, without unnecessary delay.",
   },
   {
     number: "03",
     icon: ShieldCheck,
     title: "100% Regulatory & Legal Clarity",
-    desc: "Zero ambiguity. Every project strictly adheres to government sanctions, clear land titles, environmental norms, and complete RERA compliance.",
+    desc: "Zero ambiguity. Every acquisition is backed by verified titles, clear zoning classification, environmental clearances, and full regulatory compliance.",
   },
   {
     number: "04",
     icon: Award,
-    title: "End-to-End Investment Value",
-    desc: "Properties engineered for high yield and enduring value — supported by transparent pricing, on-time delivery, and lifetime property care.",
+    title: "End-to-End Acquisition Value",
+    desc: "Land parcels sourced and structured for long-term operational and investment value, supported by transparent pricing and complete handover support.",
   },
 ];
 
@@ -55,9 +55,9 @@ export default function AdvantagesSection() {
                   maxWidth: "520px",
                 }}
               >
-                Why choose{" "}
+                Why you should{" "}
                 <span className="heading-gradient-dark font-semibold">
-                  ZYPER Real Estate.
+                  choose ZYPER?
                 </span>
               </h2>
             </Reveal>
@@ -71,7 +71,7 @@ export default function AdvantagesSection() {
                 maxWidth: "460px",
               }}
             >
-              A rigorous commitment to architectural integrity, strict compliance, and lifetime asset value.
+              A rigorous commitment to acquisition integrity, strict compliance, and long-term asset value.
             </p>
           </Reveal>
         </div>

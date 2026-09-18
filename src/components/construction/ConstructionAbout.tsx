@@ -26,7 +26,7 @@ export default function ConstructionAbout() {
               }}
             >
               <span className="heading-gradient-dark font-semibold">
-                Engineering the future, one structure at a time.
+                Securing the right land, one acquisition at a time.
               </span>
             </h2>
           </Reveal>
@@ -41,7 +41,9 @@ export default function ConstructionAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                ZYPER Construction delivers turnkey structural engineering and architectural execution built for enduring durability.
+                ZYPER Construction delivers end to end industrial land
+                acquisition and land takeover services, built for the long term
+                growth of corporate companies.
               </p>
             </Reveal>
 
@@ -54,7 +56,10 @@ export default function ConstructionAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Our specialized site engineers operate across Bengaluru and Karnataka with deep expertise in structural resilience, geotechnical integrity, and modern construction tech.
+                Our specialized land acquisition team operates across Bengaluru
+                and Karnataka with deep expertise in industrial zoning, title
+                due diligence, and corporate property requirements, so every
+                acquisition holds up to scrutiny long after the deal closes.
               </p>
             </Reveal>
           </div>
@@ -73,7 +78,7 @@ export default function ConstructionAbout() {
             >
               <Image
                 src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80"
-                alt="ZYPER Construction project"
+                alt="ZYPER industrial land acquisition"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 60vw"

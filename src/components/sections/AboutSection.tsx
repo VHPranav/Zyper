@@ -32,8 +32,11 @@ export default function AboutSection() {
                 }}
               >
                 ZYPER is a diversified business group with strong interests in
-                Real Estate, Construction, and Liquor &amp; Beverages. Built on
-                the principles of trust, quality, and long-term value.
+                Real Estate, Construction, and Beverages, operating across
+                Bengaluru and Karnataka. We build homes and commercial spaces,
+                execute construction projects with our own in-house teams, and
+                distribute premium wines, spirits, and beers to retail partners
+                and events.
               </p>
             </Reveal>
 
@@ -46,21 +49,21 @@ export default function AboutSection() {
                   maxWidth: "440px",
                 }}
               >
-                Our strength lies in our experienced teams, structured
-                operations, and a clear vision for sustainable growth across
-                multiple sectors.
+                Our strength lies in experienced, in-house teams, structured
+                processes, and transparent execution across every division.
+                Whether it&apos;s a residential project, a construction site, or
+                a beverage order, our approach stays the same — clear
+                communication, quality work, and long-term reliability over
+                one-time transactions.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <Link
-                href="/#contact"
+                href="/about"
                 className="btn btn-light"
               >
-                <span>More about us</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2.5">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
+                <span>More about us →</span>
               </Link>
             </Reveal>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { ShieldCheck, Award, Layers, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Award, Thermometer, Users } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const principles = [
@@ -8,25 +8,25 @@ const principles = [
     number: "01",
     icon: ShieldCheck,
     title: "Licensed Operations",
-    desc: "All trading and logistics activities strictly operate under state excise permits and central regulatory clearances.",
+    desc: "All trading and logistics activities run under valid state excise permits and central regulatory clearance, so every shipment moves through fully authorized channels with no exceptions and no unlicensed activity anywhere along the way.",
   },
   {
     number: "02",
     icon: Award,
-    title: "Rigorous Quality Assurance",
-    desc: "Comprehensive batch testing, temperature-regulated warehousing, and seal-validation protocols at every transit phase.",
+    title: "Verified Sourcing",
+    desc: "Every label in the portfolio comes through direct partnerships with accredited distillers and beverage houses, which keeps provenance verified at every stage and makes sure nothing enters the supply chain through unofficial or unverified routes.",
   },
   {
     number: "03",
-    icon: Layers,
-    title: "Ethical Sourcing",
-    desc: "Direct partnerships with verified, accredited distillers and beverage houses guaranteeing authentic batch provenance.",
+    icon: Thermometer,
+    title: "Storage That Protects Quality",
+    desc: "Temperature regulated warehousing and consistent batch checks keep wine, spirits and beer in the same condition they left the source in, protecting quality at every point between arrival, storage and eventual delivery to partners.",
   },
   {
     number: "04",
-    icon: CheckCircle2,
-    title: "Responsible Distribution",
-    desc: "Uncompromising enforcement of legal age limits, authorized vendor supply chains, and socially responsible commerce.",
+    icon: Users,
+    title: "A Team That Shows Up",
+    desc: "Retail and hospitality partners get a distributor who delivers on time, answers calls when something needs sorting out, and stays involved well beyond the first shipment as an ongoing relationship.",
   },
 ];
 
@@ -55,9 +55,9 @@ export default function PrinciplesSection() {
                   maxWidth: "520px",
                 }}
               >
-                Our operating{" "}
+                Our{" "}
                 <span className="heading-gradient-light font-semibold">
-                  principles.
+                  Principles
                 </span>
               </h2>
             </Reveal>
@@ -71,7 +71,10 @@ export default function PrinciplesSection() {
                 maxWidth: "460px",
               }}
             >
-              Upholding integrity, security, and traceability throughout the entire supply cycle.
+              Every shipment we handle moves through a framework built on
+              integrity, security and traceability, so retail partners always
+              know their stock is licensed, verified and handled with genuine
+              care.
             </p>
           </Reveal>
         </div>
@@ -85,19 +88,15 @@ export default function PrinciplesSection() {
                   className="flex flex-col justify-between h-full rounded-3xl bg-white/[0.03] border border-white/10 hover:border-white/20 hover:bg-white/[0.05] transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
                   style={{
                     padding: "clamp(24px, 2.2vw, 36px)",
-                    minHeight: "260px",
+                    minHeight: "280px",
                   }}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-6">
-                      <span
-                        className="text-xs font-mono font-bold tracking-wider text-[#DF9D32]"
-                      >
+                      <span className="text-xs font-mono font-bold tracking-wider text-[#DF9D32]">
                         {p.number}
                       </span>
-                      <div
-                        className="w-10 h-10 rounded-2xl flex items-center justify-center bg-white/[0.06] text-[#DF9D32]"
-                      >
+                      <div className="w-10 h-10 rounded-2xl flex items-center justify-center bg-white/[0.06] text-[#DF9D32]">
                         <IconComp className="w-4 h-4" />
                       </div>
                     </div>

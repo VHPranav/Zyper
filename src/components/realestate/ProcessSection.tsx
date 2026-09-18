@@ -5,23 +5,23 @@ import { Reveal } from "@/components/ui/Reveal";
 const processSteps = [
   {
     step: "01",
-    title: "Personalized Discovery",
-    desc: "We analyze your lifestyle preferences, investment objectives, and spatial requirements to curate matching opportunities.",
+    title: "Requirement & Site Mapping",
+    desc: "We assess your operational needs, expansion timeline, and site requirements to identify matching land parcels.",
   },
   {
     step: "02",
-    title: "Site Tour & Architecture",
-    desc: "Comprehensive site visits, blueprint reviews, structural walkthroughs, and material specification previews.",
+    title: "Site Visit & Feasibility Review",
+    desc: "Comprehensive site visits, zoning verification, and feasibility assessment for your intended use.",
   },
   {
     step: "03",
     title: "Transparent Due Diligence",
-    desc: "Direct access to title deeds, government approvals, RERA registrations, and transparent milestone schedules.",
+    desc: "Direct access to title deeds, government approvals, encumbrance records, and a transparent acquisition timeline.",
   },
   {
     step: "04",
-    title: "Seamless Handover & Care",
-    desc: "Timely possession with thorough quality audits, asset documentation, and long-term property management support.",
+    title: "Acquisition Closure & Handover",
+    desc: "Timely registration, complete documentation handover, and continued support for post-acquisition requirements.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function ProcessSection() {
                 maxWidth: "460px",
               }}
             >
-              From initial consultation to key handover, our streamlined four-stage protocol ensures total transparency.
+              From initial consultation to final handover, our streamlined four-stage protocol ensures total transparency.
             </p>
           </Reveal>
         </div>

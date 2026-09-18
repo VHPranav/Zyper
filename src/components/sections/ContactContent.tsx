@@ -89,9 +89,16 @@ export default function ContactContent() {
     setFormState((prev) => ({ ...prev, agreeToComms: e.target.checked }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submittedState, setSubmittedState] = useState<"idle" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you! We will get back to you shortly.");
+    try {
+      // Attempt form submission — replace with actual API call if needed
+      setSubmittedState("success");
+    } catch {
+      setSubmittedState("error");
+    }
   };
 
   const filteredFaqs = faqData.filter((item) => item.category === faqCategory);
@@ -118,10 +125,10 @@ export default function ContactContent() {
               letterSpacing: "-0.04em",
               lineHeight: "1.1",
               color: "#111111",
-              marginBottom: "clamp(56px, 7vw, 84px)",
+              marginBottom: "clamp(32px, 4vw, 48px)",
             }}
           >
-            Get in touch
+            Get in Touch
           </h1>
         </Reveal>
 
@@ -187,10 +194,15 @@ export default function ContactContent() {
                   }}
                 >
                   <span style={{ fontWeight: 400, opacity: 0.9 }}>
-                    We love connecting and sharing ideas.{" "}
+                    Most of our work begins with someone writing in with a half
+                    formed idea. A plot they have been looking at for months, a
+                    house they keep sketching on paper, a brand trying to find
+                    its way into the Karnataka market.{" "}
                   </span>
                   <span style={{ fontWeight: 600 }}>
-                    Follow us on your favorite social media or drop us a message at:
+                    Write to us at the address below or find us on social media,
+                    and you will hear back from the person who actually handles
+                    that side of the business.
                   </span>
                 </p>
 
@@ -392,20 +404,31 @@ export default function ContactContent() {
                 style={{
                   textAlign: "center",
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  fontSize: "clamp(1.15rem, 1.55vw, 1.4rem)",
-                  lineHeight: "1.4",
-                  letterSpacing: "-0.02em",
+                  fontSize: "clamp(1.4rem, 1.9vw, 1.75rem)",
+                  lineHeight: "1.3",
+                  letterSpacing: "-0.025em",
                   color: "#111111",
-                  marginBottom: "36px",
+                  marginBottom: "8px",
+                  fontWeight: 600,
                 }}
               >
-                <span style={{ fontWeight: 400, opacity: 0.75 }}>
-                  I have a specific request.{" "}
-                </span>
-                <span style={{ fontWeight: 700 }}>
-                  Share more details with me.
-                </span>
+                Tell Us What You Are Looking For
               </h2>
+              <p
+                style={{
+                  textAlign: "center",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  fontSize: "14px",
+                  color: "rgba(17,17,17,0.6)",
+                  lineHeight: "1.6",
+                  marginBottom: "36px",
+                  maxWidth: "440px",
+                  margin: "0 auto 36px",
+                }}
+              >
+                Fill in what you know so far. Even a rough idea gives us enough
+                to give you a useful first answer instead of a brochure.
+              </p>
 
               <form
                 onSubmit={handleSubmit}
@@ -593,9 +616,39 @@ export default function ContactContent() {
                       (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                     }}
                   >
-                    <span>Send</span>
+                    <span>Send Enquiry</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
+
+                  {/* Submission feedback */}
+                  {submittedState === "success" && (
+                    <p
+                      style={{
+                        marginTop: "16px",
+                        fontSize: "14px",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
+                        color: "#1a6b3c",
+                        fontWeight: 500,
+                        textAlign: "center",
+                      }}
+                    >
+                      Thanks for reaching out. The concerned team will connect with you shortly.
+                    </p>
+                  )}
+                  {submittedState === "error" && (
+                    <p
+                      style={{
+                        marginTop: "16px",
+                        fontSize: "14px",
+                        fontFamily: "'Plus Jakarta Sans', sans-serif",
+                        color: "#b91c1c",
+                        fontWeight: 500,
+                        textAlign: "center",
+                      }}
+                    >
+                      Something went wrong. Please review the details and try again later.
+                    </p>
+                  )}
                 </div>
               </form>
             </div>
@@ -621,7 +674,7 @@ export default function ContactContent() {
                 style={{
                   fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontSize: "clamp(1.2rem, 1.65vw, 1.5rem)",
-                  lineHeight: "1.45",
+                  lineHeight: "1.5",
                   letterSpacing: "-0.02em",
                   maxWidth: "420px",
                   color: "#111111",
@@ -629,10 +682,13 @@ export default function ContactContent() {
                 }}
               >
                 <span style={{ fontWeight: 400, opacity: 0.7 }}>
-                  We believe in meaningful conversations. To help you out, we provide{" "}
+                  Some questions are quicker to answer out loud. Book a free
+                  twenty minute call and we will talk through what you are
+                  considering, what it realistically costs, and whether we are
+                  the right people for it.{" "}
                 </span>
                 <span style={{ fontWeight: 700 }}>
-                  a free 20-minute call to answer your questions.
+                  If we are not, we will tell you that too.
                 </span>
               </p>
             </Reveal>

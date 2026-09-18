@@ -1,29 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, FileCheck, Scale, Lock } from "lucide-react";
+import { ArrowRight, ShieldCheck, FileCheck, Lock, PackageCheck } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const governanceItems = [
   {
     title: "State Excise Compliance",
-    desc: "Strict adherence to bonded warehouse laws, excise clearance passes, and state transport permits.",
-    icon: Scale,
-  },
-  {
-    title: "FSSAI Safety Standards",
-    desc: "Certified warehousing adhering to food and beverage hygiene, storage limits, and shelf-life tracking.",
-    icon: FileCheck,
-  },
-  {
-    title: "Ethical Brand Partnerships",
-    desc: "Direct authorized channel distribution preventing parallel grey imports and unverified stock.",
+    desc: "Every shipment moves under valid excise clearance and transport permits, fully documented from warehouse to final delivery.",
     icon: ShieldCheck,
   },
   {
+    title: "FSSAI Safety Standards",
+    desc: "Storage and handling follow certified food safety protocols, with shelf life tracked from arrival through to dispatch.",
+    icon: FileCheck,
+  },
+  {
     title: "Anti-Counterfeit Protocols",
-    desc: "Barcode verification, hologram authenticity validation, and end-to-end serialized dispatch logs.",
+    desc: "Serialized dispatch records and authenticity checks keep counterfeit or unverified stock out of the supply chain entirely.",
     icon: Lock,
+  },
+  {
+    title: "Authorized Channel Sourcing",
+    desc: "Every brand relationship runs through direct, authorized partnerships, with no parallel imports or unverified stock anywhere in the chain.",
+    icon: PackageCheck,
   },
 ];
 
@@ -66,8 +66,10 @@ export default function GovernanceSection() {
                 maxWidth: "440px",
               }}
             >
-              We believe that the beverages business carries a paramount civic responsibility.
-              Every operation — from bonded procurement to terminal delivery — is strictly audited under state and national legal statutes.
+              Every operation, from bonded procurement to final delivery, is
+              audited against state and national regulation, because this
+              business carries a responsibility that goes beyond simply moving
+              stock.
             </p>
           </Reveal>
 
@@ -97,9 +99,7 @@ export default function GovernanceSection() {
                     }}
                   >
                     <div>
-                      <div
-                        className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 bg-white/[0.06] text-[#DF9D32]"
-                      >
+                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 bg-white/[0.06] text-[#DF9D32]">
                         <IconComp className="w-5 h-5" />
                       </div>
                       <h3

@@ -7,25 +7,25 @@ import { Reveal } from "@/components/ui/Reveal";
 
 const propertyTypes = [
   {
-    tag: "Residential Luxury",
-    title: "Bespoke Luxury Villas",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
-    desc: "Custom-designed private residences and gated villa enclaves featuring landscaped courtyards, private swimming pools, and high-end artisanal finishes.",
-    features: ["Private Garden & Deck", "Double-Height Atriums", "24/7 Gated Security"],
+    tag: "Industrial",
+    title: "Industrial Land Acquisition",
+    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
+    desc: "End-to-end sourcing and acquisition of industrial land parcels for manufacturing units, warehousing facilities, and logistics parks, backed by verified title clearance and zoning classification.",
+    features: ["Verified Industrial Zoning", "Clear & Marketable Title", "Utility & Access Readiness"],
   },
   {
-    tag: "Urban Living",
-    title: "Premium Apartments & Townhomes",
-    image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80",
-    desc: "Contemporary residences in prime metropolitan hubs designed with open-concept floor plans, smart home integration, and resort-style lifestyle amenities.",
-    features: ["Infinity Pool & Clubhouse", "Smart Home Automation", "City Center Access"],
-  },
-  {
-    tag: "Commercial & Enterprise",
-    title: "Commercial Spaces & Retail Hubs",
+    tag: "Corporate",
+    title: "Corporate Campus & Office Land",
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
-    desc: "Grade-A corporate suites, modern office campuses, and high-street retail environments built for high footfall, business prestige, and optimum rental yields.",
-    features: ["Grade-A Structural Spec", "High Footfall Frontage", "Scalable Modular Layouts"],
+    desc: "Land acquisition support for corporate campuses, IT parks, and office developments, positioned for connectivity, workforce access, and long-term operational value.",
+    features: ["Prime Connectivity Corridors", "Scalable Land Parcels", "Regulatory & Approval Support"],
+  },
+  {
+    tag: "Aggregation",
+    title: "Land Aggregation & Takeover",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+    desc: "We manage multi-owner land aggregation, consolidation, and full-scale takeover on behalf of corporate clients, simplifying complex acquisitions into a single transparent transaction.",
+    features: ["Multi-Owner Consolidation", "Title & Encumbrance Clearance", "Single-Window Transaction"],
   },
 ];
 
@@ -55,9 +55,9 @@ export default function PropertyTypesSection() {
                 }}
               >
                 <span className="heading-gradient-dark font-semibold">
-                  Tailored spaces
+                  Land solutions tailored
                 </span>{" "}
-                for every requirement.
+                to every corporate requirement.
               </h2>
             </Reveal>
           </div>
@@ -70,7 +70,7 @@ export default function PropertyTypesSection() {
                 maxWidth: "460px",
               }}
             >
-              From custom waterfront villas to enterprise-grade commercial environments, discover our structured real estate solutions.
+              From single-parcel acquisitions to large-scale industrial land takeovers, discover our structured approach to corporate real estate solutions.
             </p>
           </Reveal>
         </div>
@@ -93,7 +93,7 @@ export default function PropertyTypesSection() {
                   />
                 </div>
 
-              {/* Card Body */}
+                {/* Card Body */}
                 <div
                   style={{
                     padding: "clamp(20px, 2.5vw, 32px)",

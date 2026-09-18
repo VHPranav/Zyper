@@ -1,32 +1,32 @@
 "use client";
 
-import { HardHat, Clock, Leaf, ShieldAlert } from "lucide-react";
+import { FileCheck, Clock, ShieldCheck, Receipt } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const features = [
   {
     number: "01",
-    icon: HardHat,
-    title: "Structural Integrity",
-    desc: "Every build begins with geotechnical soil tests and computer-modeled structural engineering to guarantee decades of resilient stability.",
+    icon: FileCheck,
+    title: "Title and Legal Due Diligence",
+    desc: "Every acquisition begins with title verification, encumbrance checks, and land due diligence, so ownership transfers to your company on a clean and legally sound record.",
   },
   {
     number: "02",
     icon: Clock,
-    title: "Strict Timeline Execution",
-    desc: "We utilize CPM/PERT project management workflows to track daily milestones, ensuring zero project overruns and on-time completion.",
+    title: "On Time Land Takeover",
+    desc: "We track every acquisition through clear milestones and regular updates, so corporate clients receive possession of their land without unnecessary delays.",
   },
   {
     number: "03",
-    icon: Leaf,
-    title: "Sustainable & Low-Carbon",
-    desc: "We source certified green materials, optimize thermal efficiency, and minimize construction footprint without compromising durability.",
+    icon: ShieldCheck,
+    title: "Regulatory and Zoning Compliance",
+    desc: "We assess industrial zoning, environmental clearances, and statutory approvals such as KIADB requirements, so every parcel is fully compliant before takeover.",
   },
   {
     number: "04",
-    icon: ShieldAlert,
-    title: "Transparent Fixed Pricing",
-    desc: "Detailed bill of quantities (BOQ) with guaranteed cost certainty, eliminating unexpected surprise fees throughout execution.",
+    icon: Receipt,
+    title: "Transparent Transaction Costs",
+    desc: "A detailed cost breakdown covering land value, statutory charges, and transaction fees, so there are no unexpected costs during your land acquisition.",
   },
 ];
 
@@ -46,6 +46,16 @@ export default function ConstructionPhilosophy() {
         >
           <div>
             <Reveal delay={0.1}>
+              <p
+                className="uppercase font-mono font-semibold mb-4"
+                style={{
+                  fontSize: "11px",
+                  letterSpacing: "0.14em",
+                  color: "rgba(0,0,0,0.4)",
+                }}
+              >
+                Our Philosophy
+              </p>
               <h2
                 className="text-[var(--brown-black)] font-medium"
                 style={{
@@ -55,9 +65,9 @@ export default function ConstructionPhilosophy() {
                   maxWidth: "520px",
                 }}
               >
-                Our{" "}
+                Setting the standard for{" "}
                 <span className="heading-gradient-dark font-semibold">
-                  construction philosophy.
+                  corporate land acquisition.
                 </span>
               </h2>
             </Reveal>
@@ -71,7 +81,7 @@ export default function ConstructionPhilosophy() {
                 maxWidth: "460px",
               }}
             >
-              Setting the standard for modern civil engineering, safety compliance, and architectural accuracy.
+              Setting the standard for corporate land acquisition and regulatory accuracy.
             </p>
           </Reveal>
         </div>

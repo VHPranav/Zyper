@@ -204,7 +204,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 { label: "Real Estate", href: "/real-estate" },
                 { label: "Construction", href: "/construction" },
                 { label: "Beverages & Spirits", href: "/liquor" },
-                { label: "About Group", href: "/#about" },
+                { label: "About Group", href: "/about" },
                 { label: "Capabilities & Services", href: "/#services" },
                 { label: "Contact Us", href: "/#contact" },
               ].map(({ label, href }) => (
@@ -247,9 +247,9 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 { label: "Project Gallery", href: "/#gallery" },
                 { label: "Our Philosophy", href: "/#about" },
                 { label: `Contact (${siteConfig.email})`, href: `mailto:${siteConfig.email}`, external: true },
-                { label: "Privacy Policy", href: "/#" },
-                { label: "Terms & Conditions", href: "/#" },
-                { label: "Regulatory & RERA", href: "/#" },
+                { label: "Privacy Policy", href: "/privacy" },
+                { label: "Terms & Conditions", href: "/terms" },
+                { label: "Regulatory & RERA", href: "/regulatory" },
               ].map(({ label, href, external }) => (
                 <li key={label}>
                   {external ? (
@@ -334,7 +334,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
               maxWidth: "880px",
             }}
           >
-            ZYPER VENTURES is a diversified business group operating across Real Estate, Construction, and Liquor &amp; Beverages in Bengaluru, Karnataka, India. Built on the core principles of trust, quality, transparency, and long-term value creation. All corporate content and division assets are managed under strict regulatory compliance.
+            ZYPER Ventures works across real estate, construction, and beverages in Bengaluru. Different industries, one team, one way of doing things properly.
           </p>
         </div>
 

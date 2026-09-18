@@ -10,9 +10,10 @@ import GallerySection from "@/components/sections/GallerySection";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "ZYPER VENTURES — Real Estate · Construction · Beverages",
+  title: "ZYPER Ventures | Real Estate, Construction & Beverages in Bengaluru",
   description:
-    "ZYPER VENTURES is a diversified group excelling in Real Estate, Construction, and Premium Beverages across Bengaluru & Karnataka. Built on trust, quality, and long-term value.",
+    "ZYPER Ventures is a diversified business group in Bengaluru, working across real estate, construction, and premium beverage distribution. Explore our projects, our divisions, and what drives us.",
+  keywords: "ZYPER Ventures",
 };
 
 export default function HomePage() {

@@ -12,9 +12,10 @@ import {
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Real Estate",
+  title: "Corporate Land Acquisition & Industrial Land Takeover | ZYPER VENTURES",
   description:
-    "ZYPER Real Estate — premium residential and commercial properties in Bengaluru & Karnataka. Transparent, quality-first, customer-centric.",
+    "Looking for real estate in Bangalore? ZYPER offers corporate land acquisition, industrial land takeover & real estate solutions across Bengaluru & Karnataka.",
+  keywords: "corporate land acquisition",
 };
 
 export default function RealEstatePage() {
@@ -24,8 +25,8 @@ export default function RealEstatePage() {
       <main id="main-content">
         <PageHero
           label="01 / Real Estate"
-          title={["YOUR VISION", "OF ELEVATED", "LIVING."]}
-          subtitle="Premium residential and commercial spaces designed for the way you live today."
+          title={["THE RIGHT LAND,", "ACQUIRED RIGHT."]}
+          subtitle="End-to-end land acquisition and land takeover solutions for corporate and industrial real estate requirements across Bengaluru and Karnataka."
           videoUrl="/videos/realestate.mp4"
           posterUrl="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
         />
@@ -34,7 +35,11 @@ export default function RealEstatePage() {
         <SignatureProjectsSection />
         <AdvantagesSection />
         <ProcessSection />
-        <CTASection />
+        <CTASection
+          theme="dark"
+          heading="Let's talk about what you're building."
+          body="We love to communicate and discuss. If you have any questions regarding our land acquisition projects, industrial investments, or corporate property requirements, book a call to learn more or send us an inquiry."
+        />
       </main>
       <Footer />
     </>

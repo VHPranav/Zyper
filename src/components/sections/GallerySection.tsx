@@ -216,7 +216,7 @@ export default function GallerySection() {
                         Our work speaks for itself.
                       </span>{" "}
                       <span style={{ color: "rgba(0, 0, 0, 0.4)", fontWeight: 500 }}>
-                        A curated look at our mission across all divisions.
+                        Real projects. Real progress. Across everything we build.
                       </span>
                     </h2>
                   </Reveal>
@@ -231,8 +231,10 @@ export default function GallerySection() {
                         color: "rgba(0, 0, 0, 0.5)",
                       }}
                     >
-                      Completed and ongoing projects across residential architecture,
-                      interior design, and construction precision — all in one place.
+                      A look at the land we&apos;ve helped acquire and develop
+                      across Bengaluru, from corporate and industrial sites to
+                      commercial land, handled from due diligence to final
+                      handover.
                     </p>
                   </Reveal>
                   {/* CTA */}

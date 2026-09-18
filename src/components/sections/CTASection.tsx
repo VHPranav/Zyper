@@ -7,9 +7,11 @@ import { siteConfig } from "@/data/siteData";
 
 interface CTASectionProps {
   theme?: "dark" | "light"; // "light" = white background with dark text (default); "dark" = black background with light text
+  heading?: string;
+  body?: string;
 }
 
-export default function CTASection({ theme = "light" }: CTASectionProps) {
+export default function CTASection({ theme = "light", heading, body }: CTASectionProps) {
   const isDark = theme === "dark";
 
   return (
@@ -38,10 +40,10 @@ export default function CTASection({ theme = "light" }: CTASectionProps) {
               }}
             >
               <span style={{ color: isDark ? "#FFFFFF" : "#000000" }}>
-                We love to communicate and discuss.
+                {heading ?? "Let\u2019s connect"}
               </span>{" "}
               <span style={{ color: isDark ? "rgba(255, 255, 255, 0.45)" : "rgba(0, 0, 0, 0.4)" }}>
-                If you have any questions regarding our projects, investments, or group divisions, book a call to learn more or send us an inquiry.
+                {body ?? ("Whether it\u2019s acquiring land, taking over an existing site, planning a construction project, or placing a beverage order, we\u2019re happy to walk you through how ZYPER works. Book a call or drop us a line, and we\u2019ll get back to you directly.")}
               </span>
             </h2>
           </Reveal>

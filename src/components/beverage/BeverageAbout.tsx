@@ -26,7 +26,7 @@ export default function BeverageAbout() {
               }}
             >
               <span className="heading-gradient-light font-semibold">
-                Premium spirits, responsibly distributed.
+                The Care Behind Every Bottle We Deliver
               </span>
             </h2>
           </Reveal>
@@ -41,7 +41,13 @@ export default function BeverageAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                ZYPER Beverages oversees the licensed trading and distribution of fine spirits and premium beverage portfolios across Bengaluru district and Karnataka.
+                ZYPER Beverages manages the licensed trading and distribution of
+                wine, spirits and beer across Bengaluru and Karnataka, at a
+                moment when the state&apos;s beverage market is changing faster
+                than it has in years. Bengaluru&apos;s reputation as one of
+                India&apos;s most active craft beer markets keeps growing, and
+                rising incomes among the city&apos;s professional base are
+                driving steady demand for premium and imported labels.
               </p>
             </Reveal>
 
@@ -54,7 +60,12 @@ export default function BeverageAbout() {
                   letterSpacing: "-0.01em",
                 }}
               >
-                Operating with rigorous state regulatory compliance, temperature-controlled logistics, and an unwavering commitment to authentic provenance.
+                ZYPER Beverages was built for exactly this kind of market,
+                moving fast enough to keep up with shifting demand while never
+                loosening its grip on compliance, provenance or storage quality
+                along the way. The same standards extend beyond Karnataka too,
+                with export shipments reaching markets like Tanzania, Kenya and
+                Djibouti under confirmed letter of credit arrangements.
               </p>
             </Reveal>
           </div>

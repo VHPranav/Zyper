@@ -55,7 +55,7 @@ export default function SignatureProjectsSection() {
                 }}
               >
                 <span className="heading-gradient-dark font-semibold">
-                  Signature developments.
+                  Signature Developments
                 </span>
               </h2>
             </Reveal>
@@ -69,7 +69,7 @@ export default function SignatureProjectsSection() {
                 maxWidth: "460px",
               }}
             >
-              Explore landmark residential addresses and commercial flagships setting new benchmarks in Bengaluru & Karnataka.
+              A look at recent corporate and industrial land acquisitions completed for our clients across Bengaluru and Karnataka.
             </p>
           </Reveal>
         </div>

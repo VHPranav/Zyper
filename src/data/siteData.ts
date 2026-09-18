@@ -93,40 +93,40 @@ export const divisions = [
 export const services = [
   {
     id: 1,
-    title: "Custom home planning",
+    title: "Land Identification & Due Diligence",
     description:
-      "Every home is tailored to your lifestyle, balancing beauty, functionality, and long-term value.",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
+      "Every acquisition starts with a clear picture, verified titles, zoning checks, and site suitability assessed upfront, not discovered after the deal is done.",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
   },
   {
     id: 2,
-    title: "Interior architecture",
+    title: "Acquisition & Negotiation",
     description:
-      "Crafting modern, spacious interiors that maximize natural light and seamless indoor-outdoor transitions.",
-    image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=1200&q=80",
+      "Our in-house team handles negotiations directly with landowners and stakeholders, so pricing and terms stay fair, clear, and in your interest from the start.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80",
   },
   {
     id: 3,
-    title: "Landscape curation",
+    title: "Legal Transfer & Documentation",
     description:
-      "Designing private botanical gardens, infinity pools, and elegant outdoor dining lounges in harmony with nature.",
-    image: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=1200&q=80",
+      "We manage the entire legal process, from title transfer to regulatory approvals, with our own team overseeing every step, no delays passed on to you.",
+    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1200&q=80",
   },
   {
     id: 4,
-    title: "Premium construction",
+    title: "End-to-End Land Solutions",
     description:
-      "Constructing structures of enduring quality using sustainable materials and advanced engineering standards.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80",
+      "From the first site visit to final possession, we handle the complete process under one roof, with clear updates at every stage.",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80",
   },
 ];
 
 // ─── Stats ───
 export const stats = [
-  { value: "15+", label: "Years of Excellence" },
-  { value: "200+", label: "Projects Completed" },
+  { value: "14+", label: "Years in Bengaluru" },
+  { value: "16+", label: "Projects Delivered" },
   { value: "3", label: "Business Divisions" },
-  { value: "500+", label: "Happy Clients" },
+  { value: "16+", label: "Happy Clients" },
 ];
 
 // ─── Gallery images ───

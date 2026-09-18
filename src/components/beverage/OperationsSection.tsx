@@ -5,11 +5,18 @@ import { MapPin, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const areas = [
-  { name: "Bengaluru Central & CBD", hub: "Primary Headquarters & Premium Trade Center" },
-  { name: "Peenya & North-West Industrial Corridor", hub: "Central Warehousing & Inland Logistics Depot" },
-  { name: "Whitefield & East Bengaluru Hub", hub: "High-Capacity Regional Distribution Depot" },
-  { name: "Electronic City & South Corridor", hub: "Southern Transit Gateway & Trade Hub" },
-  { name: "Hebbal & North Gateway (Airport Road)", hub: "Rapid Transit Depot & Cold-Chain Facility" },
+  {
+    name: "Kenya",
+    hub: "A market where imported premium spirits are steadily replacing local alternatives, supplied through confirmed letter of credit trade terms.",
+  },
+  {
+    name: "Tanzania",
+    hub: "One of the more established African destinations for alcohol imports from India, served under the same compliance standards used domestically.",
+  },
+  {
+    name: "Djibouti",
+    hub: "A strategic gateway into the wider Horn of Africa trade corridor, supporting onward movement of shipments across the region.",
+  },
 ];
 
 export default function OperationsSection() {
@@ -61,13 +68,28 @@ export default function OperationsSection() {
                 marginBottom: "40px",
               }}
             >
-              Strategic distribution hubs situated across Bengaluru district&apos;s key transit routes and industrial corridors, providing rapid, compliant turnaround for authorized trade.
+              From distribution hubs across Bengaluru&apos;s key transit
+              corridors to export markets across East Africa, ZYPER Beverages
+              moves stock through channels built for speed, compliance and
+              consistency, wherever the order is headed.
+            </p>
+            <p
+              style={{
+                color: "rgba(255, 255, 255, 0.35)",
+                fontSize: "clamp(0.85rem, 1vw, 1rem)",
+                lineHeight: "1.65",
+                maxWidth: "440px",
+                fontWeight: 400,
+                marginBottom: "40px",
+              }}
+            >
+              Across Africa
             </p>
           </Reveal>
 
           <Reveal delay={0.3}>
             <Link href="/contact" className="btn btn-light w-fit">
-              <span>Inquire Distribution</span>
+              <span>Partner With Us</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Reveal>
@@ -87,39 +109,32 @@ export default function OperationsSection() {
                   borderBottom: "1px solid rgba(255, 255, 255, 0.10)",
                   cursor: "default",
                 }}
-                className="group transition-colors hover:bg-white/[0.03] rounded-2xl flex items-center justify-between"
+                className="group transition-colors hover:bg-white/[0.03] rounded-2xl flex items-start gap-4"
               >
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-2xl bg-white/[0.05] flex items-center justify-center text-[#DF9D32] shrink-0">
-                    <MapPin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h3
-                      className="text-white font-medium group-hover:text-[#DF9D32] transition-colors"
-                      style={{
-                        fontSize: "clamp(1.1rem, 1.35vw, 1.35rem)",
-                        letterSpacing: "-0.015em",
-                        lineHeight: "1.3",
-                      }}
-                    >
-                      {area.name}
-                    </h3>
-                    <p
-                      style={{
-                        color: "rgba(255, 255, 255, 0.45)",
-                        fontSize: "14px",
-                        marginTop: "4px",
-                      }}
-                    >
-                      {area.hub}
-                    </p>
-                  </div>
+                <div className="w-10 h-10 rounded-2xl bg-white/[0.05] flex items-center justify-center text-[#DF9D32] shrink-0 mt-1">
+                  <MapPin className="w-4 h-4" />
                 </div>
-                <span
-                  className="text-sm transition-transform duration-300 group-hover:translate-x-1.5 text-[#DF9D32] pr-2"
-                >
-                  →
-                </span>
+                <div className="flex-1">
+                  <h3
+                    className="text-white font-medium group-hover:text-[#DF9D32] transition-colors mb-2"
+                    style={{
+                      fontSize: "clamp(1.1rem, 1.35vw, 1.35rem)",
+                      letterSpacing: "-0.015em",
+                      lineHeight: "1.3",
+                    }}
+                  >
+                    {area.name}
+                  </h3>
+                  <p
+                    style={{
+                      color: "rgba(255, 255, 255, 0.45)",
+                      fontSize: "14px",
+                      lineHeight: "1.65",
+                    }}
+                  >
+                    {area.hub}
+                  </p>
+                </div>
               </div>
             </Reveal>
           ))}
