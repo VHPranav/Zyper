@@ -5,10 +5,22 @@ import ContactContent from "@/components/sections/ContactContent";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Contact Zyper Ventures | Real Estate, Construction & Beverages in Bengaluru",
+  title: {
+    absolute: "Contact Zyper Ventures | Real Estate, Construction & Beverages in Bengaluru",
+  },
   description:
     "Talk to the Zyper Ventures team in Bengaluru about plots, villas, apartments, commercial spaces, construction projects and licensed beverage distribution across Karnataka. Call, write or visit us.",
   keywords: "Contact Zyper Ventures",
+  openGraph: {
+    title: "Contact Zyper Ventures | Real Estate, Construction & Beverages in Bengaluru",
+    description:
+      "Talk to the Zyper Ventures team in Bengaluru about plots, villas, apartments, commercial spaces, construction projects and licensed beverage distribution across Karnataka. Call, write or visit us.",
+  },
+  twitter: {
+    title: "Contact Zyper Ventures | Real Estate, Construction & Beverages in Bengaluru",
+    description:
+      "Talk to the Zyper Ventures team in Bengaluru about plots, villas, apartments, commercial spaces, construction projects and licensed beverage distribution across Karnataka. Call, write or visit us.",
+  },
 };
 
 export default function ContactPage() {

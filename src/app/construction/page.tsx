@@ -11,10 +11,22 @@ import {
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Industrial Land Acquisition Company | ZYPER Construction",
+  title: {
+    absolute: "Industrial Land Acquisition Company | ZYPER Construction",
+  },
   description:
     "ZYPER handles industrial land acquisition and land takeover for corporate companies in Bengaluru and Karnataka, including KIADB plots and due diligence.",
   keywords: "Industrial Land Acquisition",
+  openGraph: {
+    title: "Industrial Land Acquisition Company | ZYPER Construction",
+    description:
+      "ZYPER handles industrial land acquisition and land takeover for corporate companies in Bengaluru and Karnataka, including KIADB plots and due diligence.",
+  },
+  twitter: {
+    title: "Industrial Land Acquisition Company | ZYPER Construction",
+    description:
+      "ZYPER handles industrial land acquisition and land takeover for corporate companies in Bengaluru and Karnataka, including KIADB plots and due diligence.",
+  },
 };
 
 export default function ConstructionPage() {

@@ -8,10 +8,22 @@ import AboutFullContent from "@/components/sections/AboutFullContent";
 import AboutIndustries from "@/components/sections/AboutIndustries";
 
 export const metadata: Metadata = {
-  title: "About Zyper Ventures | Real Estate, Construction and Beverages in Bengaluru",
+  title: {
+    absolute: "About Zyper Ventures | Real Estate, Construction and Beverages in Bengaluru",
+  },
   description:
     "Get to know Zyper Ventures, a Bengaluru based group spanning real estate, construction and premium beverages, built on integrity, craftsmanship and long term value.",
   keywords: "About Zyper Ventures",
+  openGraph: {
+    title: "About Zyper Ventures | Real Estate, Construction and Beverages in Bengaluru",
+    description:
+      "Get to know Zyper Ventures, a Bengaluru based group spanning real estate, construction and premium beverages, built on integrity, craftsmanship and long term value.",
+  },
+  twitter: {
+    title: "About Zyper Ventures | Real Estate, Construction and Beverages in Bengaluru",
+    description:
+      "Get to know Zyper Ventures, a Bengaluru based group spanning real estate, construction and premium beverages, built on integrity, craftsmanship and long term value.",
+  },
 };
 
 export default function AboutPage() {

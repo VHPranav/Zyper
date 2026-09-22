@@ -190,7 +190,7 @@ export default function AboutIndustries() {
                         marginBottom: "14px",
                       }}
                     >
-                      {ind.title}.
+                      {ind.title}
                     </h3>
 
                     {/* Description */}

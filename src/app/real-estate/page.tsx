@@ -12,10 +12,22 @@ import {
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Corporate Land Acquisition & Industrial Land Takeover | ZYPER VENTURES",
+  title: {
+    absolute: "Corporate Land Acquisition & Industrial Land Takeover | ZYPER VENTURES",
+  },
   description:
     "Looking for real estate in Bangalore? ZYPER offers corporate land acquisition, industrial land takeover & real estate solutions across Bengaluru & Karnataka.",
   keywords: "corporate land acquisition",
+  openGraph: {
+    title: "Corporate Land Acquisition & Industrial Land Takeover | ZYPER VENTURES",
+    description:
+      "Looking for real estate in Bangalore? ZYPER offers corporate land acquisition, industrial land takeover & real estate solutions across Bengaluru & Karnataka.",
+  },
+  twitter: {
+    title: "Corporate Land Acquisition & Industrial Land Takeover | ZYPER VENTURES",
+    description:
+      "Looking for real estate in Bangalore? ZYPER offers corporate land acquisition, industrial land takeover & real estate solutions across Bengaluru & Karnataka.",
+  },
 };
 
 export default function RealEstatePage() {

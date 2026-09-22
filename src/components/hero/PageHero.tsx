@@ -34,6 +34,7 @@ export default function PageHero({ label, title, subtitle, videoUrl, posterUrl }
               window.dispatchEvent(new CustomEvent("hero-video-ready"));
             }
           }}
+          poster={posterUrl}
           className="w-full h-full object-cover"
           aria-hidden="true"
         >

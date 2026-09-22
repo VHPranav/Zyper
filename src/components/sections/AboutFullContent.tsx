@@ -236,7 +236,7 @@ export default function AboutFullContent() {
                       margin: 0,
                     }}
                   >
-                    {v.title}.
+                    {v.title}
                   </h3>
                   <p
                     style={{

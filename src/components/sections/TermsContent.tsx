@@ -477,52 +477,6 @@ export default function TermsContent() {
           ))}
         </div>
 
-        {/* Implementation notes block */}
-        <Reveal delay={0.1}>
-          <div
-            style={{
-              marginTop: "clamp(48px, 6vw, 72px)",
-              background: "rgba(194,130,36,0.06)",
-              border: "1px solid rgba(194,130,36,0.2)",
-              borderRadius: "20px",
-              padding: "clamp(24px, 3vw, 36px)",
-            }}
-          >
-            <p
-              style={{
-                fontFamily: "'Plus Jakarta Sans', sans-serif",
-                fontWeight: 700,
-                fontSize: "11px",
-                letterSpacing: "0.1em",
-                color: "#C28224",
-                marginBottom: "16px",
-                textTransform: "uppercase",
-              }}
-            >
-              Implementation Notes — Client Review Required
-            </p>
-            {[
-              "Legal review is required before publishing. This draft is written to be clear, readable and appropriate to the three divisions, and it follows the structure that Indian companies in these sectors normally use. It has not been prepared by a lawyer. Zyper operates in three regulated environments at once, and the real estate and excise clauses in particular carry statutory exposure. Please have an advocate familiar with Karnataka excise law and with RERA review this page before it goes live.",
-              "Details still needed: Registered legal entity name, CIN, registered office address, date of publication, K-RERA registration numbers, excise licence details, construction warranty periods, and the legal and website contact email and phone number.",
-              "Privacy Policy dependency: Clause 11 links to a Privacy Policy. If one does not yet exist, it should be drafted before this page is published, both because this page refers to it and because the Digital Personal Data Protection Act, 2023 now makes one necessary for a site collecting enquiry data.",
-              "Footer placement: Terms and Conditions, Privacy Policy and Disclaimer are conventionally grouped together in the footer on every page.",
-              "Age gate consideration: Clause 7.1 states the age restriction in writing. Some Karnataka distributors also place an age confirmation interstitial in front of the beverages section. That is a design and legal decision worth raising with counsel at the same review.",
-            ].map((note, i) => (
-              <p
-                key={i}
-                style={{
-                  fontFamily: "'Plus Jakarta Sans', sans-serif",
-                  fontSize: "13px",
-                  lineHeight: "1.7",
-                  color: "rgba(17,17,17,0.65)",
-                  marginBottom: i < 4 ? "12px" : "0",
-                }}
-              >
-                {`${i + 1}. ${note}`}
-              </p>
-            ))}
-          </div>
-        </Reveal>
 
         {/* Footer note */}
         <Reveal delay={0.1}>

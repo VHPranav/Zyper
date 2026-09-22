@@ -11,10 +11,22 @@ import {
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "Zyper Beverages | Licensed Liquor Distributor in Bengaluru",
+  title: {
+    absolute: "Zyper Beverages | Licensed Liquor Distributor in Bengaluru",
+  },
   description:
     "Zyper Beverages is a licensed distributor of wine, spirits and beer across Bengaluru and Karnataka, built on verified sourcing and reliable delivery.",
   keywords: "Zyper Beverages",
+  openGraph: {
+    title: "Zyper Beverages | Licensed Liquor Distributor in Bengaluru",
+    description:
+      "Zyper Beverages is a licensed distributor of wine, spirits and beer across Bengaluru and Karnataka, built on verified sourcing and reliable delivery.",
+  },
+  twitter: {
+    title: "Zyper Beverages | Licensed Liquor Distributor in Bengaluru",
+    description:
+      "Zyper Beverages is a licensed distributor of wine, spirits and beer across Bengaluru and Karnataka, built on verified sourcing and reliable delivery.",
+  },
 };
 
 export default function LiquorPage() {

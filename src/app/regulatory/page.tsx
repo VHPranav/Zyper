@@ -4,9 +4,21 @@ import Footer from "@/components/layout/Footer";
 import RegulatoryContent from "@/components/sections/RegulatoryContent";
 
 export const metadata: Metadata = {
-  title: "Regulatory & RERA | Zyper Ventures",
+  title: {
+    absolute: "Regulatory & RERA | Zyper Ventures",
+  },
   description:
     "Zyper operates within the regulatory framework set by the Government of Karnataka, covering Karnataka RERA compliance, Greater Bengaluru Authority sanctions, and Karnataka Excise licensing.",
+  openGraph: {
+    title: "Regulatory & RERA | Zyper Ventures",
+    description:
+      "Zyper operates within the regulatory framework set by the Government of Karnataka, covering Karnataka RERA compliance, Greater Bengaluru Authority sanctions, and Karnataka Excise licensing.",
+  },
+  twitter: {
+    title: "Regulatory & RERA | Zyper Ventures",
+    description:
+      "Zyper operates within the regulatory framework set by the Government of Karnataka, covering Karnataka RERA compliance, Greater Bengaluru Authority sanctions, and Karnataka Excise licensing.",
+  },
 };
 
 export default function RegulatoryPage() {

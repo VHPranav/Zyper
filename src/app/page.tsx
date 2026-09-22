@@ -10,10 +10,22 @@ import GallerySection from "@/components/sections/GallerySection";
 import CTASection from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
-  title: "ZYPER Ventures | Real Estate, Construction & Beverages in Bengaluru",
+  title: {
+    absolute: "ZYPER Ventures | Real Estate, Construction & Beverages in Bengaluru",
+  },
   description:
     "ZYPER Ventures is a diversified business group in Bengaluru, working across real estate, construction, and premium beverage distribution. Explore our projects, our divisions, and what drives us.",
   keywords: "ZYPER Ventures",
+  openGraph: {
+    title: "ZYPER Ventures | Real Estate, Construction & Beverages in Bengaluru",
+    description:
+      "ZYPER Ventures is a diversified business group in Bengaluru, working across real estate, construction, and premium beverage distribution. Explore our projects, our divisions, and what drives us.",
+  },
+  twitter: {
+    title: "ZYPER Ventures | Real Estate, Construction & Beverages in Bengaluru",
+    description:
+      "ZYPER Ventures is a diversified business group in Bengaluru, working across real estate, construction, and premium beverage distribution. Explore our projects, our divisions, and what drives us.",
+  },
 };
 
 export default function HomePage() {

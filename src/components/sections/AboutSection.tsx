@@ -107,7 +107,7 @@ export default function AboutSection() {
                 delay={0}
               />
               <EditorialLine
-                text="designed"
+                text="Designed"
                 highlight="for life."
                 delay={0.1}
               />
