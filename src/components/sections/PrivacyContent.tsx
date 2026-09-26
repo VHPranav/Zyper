@@ -354,10 +354,11 @@ export default function PrivacyContent() {
                     }}
                   >
                     {[
-                      { label: "Grievance Officer", value: "[NAME TO CONFIRM]" },
-                      { label: "Email", value: "[OFFICIAL EMAIL TO CONFIRM]" },
-                      { label: "Phone", value: "[NUMBER TO CONFIRM]" },
-                      { label: "Registered Office", value: "ZYPER VENTURES [FULL REGISTERED ADDRESS TO CONFIRM] Bengaluru, Karnataka, India" },
+                      { label: "Entity", value: "Zyper Ventures" },
+                      { label: "Grievance Officer", value: "Grievance Officer, Zyper Ventures" },
+                      { label: "Email", value: "zyperyard@gmail.com" },
+                      { label: "Phone", value: "+91 90727 27544" },
+                      { label: "Registered Office", value: "Ground Floor 7th Cross, 27th Main Rd, HSR Layout, Bengaluru, Karnataka 560102" },
                     ].map((row) => (
                       <div key={row.label} style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                         <span

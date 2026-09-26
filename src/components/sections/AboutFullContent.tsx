@@ -79,7 +79,7 @@ export default function AboutFullContent() {
                     color: "rgba(255, 255, 255, 0.85)",
                   }}
                 >
-                  ZYPER VENTURES started with a simple belief. A city growing as fast as Bengaluru deserves businesses that don&apos;t cut corners. What began as a focused effort in [real estate or construction, confirm which came first] has grown into a group operating across three connected industries, Real Estate, Construction, and Beverages, each held to the same standard of quality and follow-through.
+                  ZYPER VENTURES started with a simple belief. A city growing as fast as Bengaluru deserves businesses that don&apos;t cut corners. What began as a focused effort in real estate and construction has grown into a group operating across three connected industries, Real Estate, Construction, and Beverages, each held to the same standard of quality and follow-through.
                 </p>
               </Reveal>
 

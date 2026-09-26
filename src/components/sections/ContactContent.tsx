@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, Loader2 } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteConfig } from "@/data/siteData";
 
@@ -89,15 +89,58 @@ export default function ContactContent() {
     setFormState((prev) => ({ ...prev, agreeToComms: e.target.checked }));
   };
 
-  const [submittedState, setSubmittedState] = useState<"idle" | "success" | "error">("idle");
+  const [submittedState, setSubmittedState] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState<string>("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmittedState("loading");
+    setErrorMessage("");
+
+    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+
+    if (!accessKey) {
+      setSubmittedState("error");
+      setErrorMessage("Form key is not configured. Please set NEXT_PUBLIC_WEB3FORMS_KEY in .env.local.");
+      return;
+    }
+
     try {
-      // Attempt form submission — replace with actual API call if needed
-      setSubmittedState("success");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formState.name,
+          email: formState.email,
+          interest: formState.interest,
+          message: formState.message,
+          agree_to_comms: formState.agreeToComms ? "Yes" : "No",
+          from_name: "ZYPHER Website Contact Form",
+          subject: `New Inquiry from ${formState.name} [${formState.interest}]`,
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmittedState("success");
+        setFormState({
+          name: "",
+          email: "",
+          interest: "Real Estate",
+          message: "",
+          agreeToComms: false,
+        });
+      } else {
+        setSubmittedState("error");
+        setErrorMessage(result.message || "Failed to submit. Please try again.");
+      }
     } catch {
       setSubmittedState("error");
+      setErrorMessage("Network error. Please check your connection and try again.");
     }
   };
 
@@ -590,6 +633,7 @@ export default function ContactContent() {
                 <div style={{ textAlign: "center", marginTop: "16px" }}>
                   <button
                     type="submit"
+                    disabled={submittedState === "loading"}
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
@@ -601,23 +645,37 @@ export default function ContactContent() {
                       fontWeight: 600,
                       fontSize: "14px",
                       color: "#FFFFFF",
-                      background: "#000000",
+                      background: submittedState === "loading" ? "#444444" : "#000000",
                       border: "none",
-                      cursor: "pointer",
+                      cursor: submittedState === "loading" ? "not-allowed" : "pointer",
+                      opacity: submittedState === "loading" ? 0.8 : 1,
                       boxShadow: "0 6px 20px rgba(0, 0, 0, 0.16)",
                       transition: "all 0.2s ease",
                     }}
                     onMouseEnter={(e) => {
-                      (e.currentTarget as HTMLElement).style.background = "#222222";
-                      (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                      if (submittedState !== "loading") {
+                        (e.currentTarget as HTMLElement).style.background = "#222222";
+                        (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                      }
                     }}
                     onMouseLeave={(e) => {
-                      (e.currentTarget as HTMLElement).style.background = "#000000";
-                      (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                      if (submittedState !== "loading") {
+                        (e.currentTarget as HTMLElement).style.background = "#000000";
+                        (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
+                      }
                     }}
                   >
-                    <span>Send Enquiry</span>
-                    <ArrowRight className="w-4 h-4" />
+                    {submittedState === "loading" ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        <span>Sending Enquiry...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>Send Enquiry</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </>
+                    )}
                   </button>
 
                   {/* Submission feedback */}
@@ -632,7 +690,7 @@ export default function ContactContent() {
                         textAlign: "center",
                       }}
                     >
-                      Thanks for reaching out. The concerned team will connect with you shortly.
+                      Thanks for reaching out! The concerned team will connect with you shortly.
                     </p>
                   )}
                   {submittedState === "error" && (
@@ -646,7 +704,7 @@ export default function ContactContent() {
                         textAlign: "center",
                       }}
                     >
-                      Something went wrong. Please review the details and try again later.
+                      {errorMessage || "Something went wrong. Please review the details and try again later."}
                     </p>
                   )}
                 </div>

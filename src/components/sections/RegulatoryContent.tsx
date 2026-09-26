@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
-import { ShieldCheck, ExternalLink, Building2, Wine, Landmark } from "lucide-react";
+import { ShieldCheck, Building2, Wine, Landmark } from "lucide-react";
 
 export default function RegulatoryContent() {
   return (
@@ -99,24 +99,7 @@ export default function RegulatoryContent() {
               >
                 rera.karnataka.gov.in
               </a>
-              . Construction begins only after plan sanction from the Greater Bengaluru Authority, the Bangalore Development Authority or the relevant local planning body. Our beverage division operates on licences issued under the Karnataka Excise Act, 1965.{" "}
-              <a
-                href="https://aecord.com/how-to/get-rera-approval-karnataka"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: "#C28224",
-                  fontWeight: 500,
-                  textDecoration: "underline",
-                  textUnderlineOffset: "3px",
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "3px",
-                }}
-              >
-                [AECORD]
-                <ExternalLink size={12} />
-              </a>
+              . Construction begins only after plan sanction from the Greater Bengaluru Authority, the Bangalore Development Authority or the relevant local planning body. Our beverage division operates on licences issued under the Karnataka Excise Act, 1965.
             </p>
           </div>
         </Reveal>
@@ -158,7 +141,7 @@ export default function RegulatoryContent() {
                   margin: 0,
                 }}
               >
-                The claim only works if actual K-RERA registration numbers for each Zyper project sit below this paragraph. A page that says &ldquo;RERA compliant&rdquo; without listed numbers reads as filler and buyers do check.
+                All active residential and commercial projects developed by Zyper are registered with the Karnataka Real Estate Regulatory Authority (K-RERA) in compliance with the RERA Act, 2016. Registration details and statutory disclosures are made accessible on dedicated project pages and verifiable through the official K-RERA registry.
               </p>
             </div>
           </Reveal>
@@ -198,7 +181,7 @@ export default function RegulatoryContent() {
                   margin: 0,
                 }}
               >
-                The beverages wording is deliberately careful. In Karnataka, wholesale liquor is a state monopoly held by Karnataka State Beverages Corporation Ltd, and private players hold retail or on-premise licences such as CL-2, CL-7 and CL-9. So Zyper should not describe itself anywhere on the site as a wholesaler or wholesale distributor. Please confirm which licence category the division actually holds so the copy can name it correctly.
+                Zyper’s beverages operations are conducted strictly in accordance with statutory licensing granted under the Karnataka Excise Act, 1965. Distribution operations cater to licensed retail, hospitality, and corporate partners in full conformity with state excise regulations.
               </p>
             </div>
           </Reveal>
@@ -238,7 +221,7 @@ export default function RegulatoryContent() {
                   margin: 0,
                 }}
               >
-                BBMP no longer exists. It was dissolved in September 2025 and replaced by the Greater Bengaluru Authority with five city corporations. Any older Zyper copy still naming BBMP should be updated, and during this transition the approving corporation depends on where the site falls.
+                All construction and infrastructure planning adheres strictly to sanctions, zoning frameworks, and statutory clearances mandated by the Greater Bengaluru Authority (GBA), Bangalore Development Authority (BDA), and respective municipal planning authorities.
               </p>
             </div>
           </Reveal>

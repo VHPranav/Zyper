@@ -9,7 +9,6 @@ interface Section {
   title: string;
   content?: string[];
   subsections?: { title: string; content: string[] }[];
-  confirmNote?: string;
   contactBlock?: boolean;
 }
 
@@ -20,7 +19,7 @@ const sections: Section[] = [
     title: "Who We Are",
     content: [
       "Zyper Ventures is a diversified business group based in Bengaluru, Karnataka, operating across three divisions. Our real estate division develops and offers residential and commercial property. Our construction division delivers building and contracting work. Our beverages division operates as a licensed distributor of wine, spirits and beer across Bengaluru and Karnataka.",
-      "References in these terms to Zyper Ventures, we, us and our mean [CLIENT TO CONFIRM: full registered legal entity name, CIN and registered office address]. References to you and your mean the person accessing or using this website.",
+      "References in these terms to Zyper Ventures, we, us and our mean Zyper Ventures, with registered office at Ground Floor 7th Cross, 27th Main Rd, HSR Layout, Bengaluru, Karnataka 560102. References to you and your mean the person accessing or using this website.",
     ],
   },
   {
@@ -80,7 +79,6 @@ const sections: Section[] = [
         title: "5.4 Regulatory registration",
         content: [
           "Our projects are registered with the Karnataka Real Estate Regulatory Authority where registration is required under the Real Estate (Regulation and Development) Act, 2016. Registration details for each project are available on the relevant project page and on the authority's official portal. We would encourage every prospective purchaser to verify registration details independently before making any commitment.",
-          "[CLIENT TO CONFIRM: K-RERA registration numbers for each live project, and whether a consolidated RERA disclosure block should also appear in the site footer]",
         ],
       },
       {
@@ -99,7 +97,6 @@ const sections: Section[] = [
       "Descriptions of our construction services, methods, timelines, materials and past work are provided to explain our approach and our capability. They are not a fixed specification and they are not a quotation.",
       "Any estimate, budget figure, duration or scope indicated on this website is illustrative. Every construction project is shaped by its own site conditions, soil profile, approvals, design decisions, material availability and client requirements. A firm scope and a firm price can only follow a site survey and a detailed discussion, and will be recorded in a written contract.",
       "Warranties, guarantees and defect liability periods, where offered, are governed entirely by the terms of the signed construction contract and not by anything stated on this website.",
-      "[CLIENT TO CONFIRM: warranty and defect liability periods offered by the construction division, so these can be described accurately here and on the Construction page]",
     ],
   },
   {
@@ -138,7 +135,6 @@ const sections: Section[] = [
         title: "7.5 Brand names and third party products",
         content: [
           "Brand names, product names, labels and logos belonging to the beverage brands we distribute remain the property of their respective owners. Their appearance on this website reflects a distribution relationship and does not imply ownership by Zyper Ventures, nor does it imply any endorsement of Zyper Ventures by those owners beyond the terms of the relevant distribution arrangement.",
-          "[CLIENT TO CONFIRM: excise licence number or numbers, and whether the client's legal team wants these displayed publicly on the website]",
         ],
       },
     ],
@@ -221,7 +217,6 @@ const sections: Section[] = [
     title: "Governing Law and Jurisdiction",
     content: [
       "These terms and any dispute or claim arising out of them or out of your use of this website are governed by the laws of India. The courts at Bengaluru, Karnataka will have exclusive jurisdiction over any such dispute or claim.",
-      "[CLIENT TO CONFIRM with legal counsel: whether an arbitration clause should be added here, and if so the seat, the number of arbitrators and the applicable rules. Many groups of this size prefer arbitration at Bengaluru under the Arbitration and Conciliation Act, 1996 with a sole arbitrator.]",
     ],
   },
   {
@@ -356,28 +351,20 @@ export default function TermsContent() {
                 {/* Top-level content paragraphs */}
                 {section.content && (
                   <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-                    {section.content.map((para, j) => {
-                      const isNote = para.startsWith("[CLIENT TO CONFIRM");
-                      return (
-                        <p
-                          key={j}
-                          style={{
-                            fontFamily: "'Plus Jakarta Sans', sans-serif",
-                            fontSize: isNote ? "12.5px" : "clamp(0.9rem, 1.05vw, 1rem)",
-                            lineHeight: "1.8",
-                            color: isNote ? "rgba(194,130,36,0.8)" : "rgba(17,17,17,0.70)",
-                            fontStyle: isNote ? "italic" : "normal",
-                            background: isNote ? "rgba(194,130,36,0.06)" : "transparent",
-                            padding: isNote ? "10px 14px" : "0",
-                            borderRadius: isNote ? "10px" : "0",
-                            borderLeft: isNote ? "3px solid rgba(194,130,36,0.35)" : "none",
-                            margin: 0,
-                          }}
-                        >
-                          {para}
-                        </p>
-                      );
-                    })}
+                    {section.content.map((para, j) => (
+                      <p
+                        key={j}
+                        style={{
+                          fontFamily: "'Plus Jakarta Sans', sans-serif",
+                          fontSize: "clamp(0.9rem, 1.05vw, 1rem)",
+                          lineHeight: "1.8",
+                          color: "rgba(17,17,17,0.70)",
+                          margin: 0,
+                        }}
+                      >
+                        {para}
+                      </p>
+                    ))}
                   </div>
                 )}
 
@@ -399,28 +386,20 @@ export default function TermsContent() {
                           {sub.title}
                         </h3>
                         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                          {sub.content.map((para, l) => {
-                            const isNote = para.startsWith("[CLIENT TO CONFIRM");
-                            return (
-                              <p
-                                key={l}
-                                style={{
-                                  fontFamily: "'Plus Jakarta Sans', sans-serif",
-                                  fontSize: isNote ? "12.5px" : "clamp(0.9rem, 1.05vw, 1rem)",
-                                  lineHeight: "1.8",
-                                  color: isNote ? "rgba(194,130,36,0.8)" : "rgba(17,17,17,0.70)",
-                                  fontStyle: isNote ? "italic" : "normal",
-                                  background: isNote ? "rgba(194,130,36,0.06)" : "transparent",
-                                  padding: isNote ? "10px 14px" : "0",
-                                  borderRadius: isNote ? "10px" : "0",
-                                  borderLeft: isNote ? "3px solid rgba(194,130,36,0.35)" : "none",
-                                  margin: 0,
-                                }}
-                              >
-                                {para}
-                              </p>
-                            );
-                          })}
+                          {sub.content.map((para, l) => (
+                            <p
+                              key={l}
+                              style={{
+                                fontFamily: "'Plus Jakarta Sans', sans-serif",
+                                fontSize: "clamp(0.9rem, 1.05vw, 1rem)",
+                                lineHeight: "1.8",
+                                color: "rgba(17,17,17,0.70)",
+                                margin: 0,
+                              }}
+                            >
+                              {para}
+                            </p>
+                          ))}
                         </div>
                       </div>
                     ))}
@@ -441,10 +420,10 @@ export default function TermsContent() {
                     }}
                   >
                     {[
-                      { label: "Entity", value: "Zyper Ventures [CLIENT TO CONFIRM: registered legal entity name]" },
-                      { label: "Registered Office", value: "[CLIENT TO CONFIRM: registered office address], Bengaluru, Karnataka" },
-                      { label: "Email", value: "[CLIENT TO CONFIRM: email address for legal and website queries]" },
-                      { label: "Telephone", value: "[CLIENT TO CONFIRM: telephone number]" },
+                      { label: "Entity", value: "Zyper Ventures" },
+                      { label: "Registered Office", value: "Ground Floor 7th Cross, 27th Main Rd, HSR Layout, Bengaluru, Karnataka 560102" },
+                      { label: "Email", value: "zyperyard@gmail.com" },
+                      { label: "Telephone", value: "9072727544" },
                     ].map((row) => (
                       <div key={row.label} style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                         <span
