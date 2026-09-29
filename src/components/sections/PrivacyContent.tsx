@@ -355,7 +355,6 @@ export default function PrivacyContent() {
                   >
                     {[
                       { label: "Entity", value: "Zyper Ventures" },
-                      { label: "Grievance Officer", value: "Grievance Officer, Zyper Ventures" },
                       { label: "Email", value: "zyperyard@gmail.com" },
                       { label: "Phone", value: "+91 90727 27544" },
                       { label: "Registered Office", value: "Ground Floor 7th Cross, 27th Main Rd, HSR Layout, Bengaluru, Karnataka 560102" },
