@@ -8,6 +8,28 @@ import { siteConfig } from "@/data/siteData";
 
 const emptySubscribe = () => () => {};
 
+// Reads the colour of the section sitting behind the navbar (y ≈ 45px) and
+// reports whether it is light, so the nav can switch between dark/light glass.
+function isLightBehindHeader(): boolean {
+  const y = 45;
+  const blocks = document.querySelectorAll<HTMLElement>("main > *, footer");
+  for (const el of Array.from(blocks)) {
+    const r = el.getBoundingClientRect();
+    if (r.top > y || r.bottom <= y) continue;
+    let node: HTMLElement | null = el;
+    while (node) {
+      const m = getComputedStyle(node).backgroundColor.match(/[\d.]+/g);
+      if (m && (m.length < 4 || parseFloat(m[3]) > 0.5)) {
+        const [r8, g8, b8] = m.map(Number);
+        return (0.299 * r8 + 0.587 * g8 + 0.114 * b8) / 255 > 0.6;
+      }
+      node = node.parentElement;
+    }
+    return false;
+  }
+  return false;
+}
+
 export default function Header() {
   const router = useRouter();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,21 +52,7 @@ export default function Header() {
 
       setIsScrolled(currentScrollY > scrollThreshold);
 
-      // /liquor is always dark themed
-      if (pathname === "/liquor") {
-        setIsLightBg(false);
-      } else if (pathname === "/contact") {
-        // /contact starts directly as a white page from top
-        setIsLightBg(true);
-      } else {
-        // On pages with a dark 100svh Hero (/, /about, /real-estate, /construction):
-        // When scrollY >= window.innerHeight - 90, user has entered the white content!
-        if (currentScrollY >= window.innerHeight - 90) {
-          setIsLightBg(true);
-        } else {
-          setIsLightBg(false);
-        }
-      }
+      setIsLightBg(isLightBehindHeader());
 
       if (currentScrollY > lastScrollY && currentScrollY > 120) {
         setIsVisible(false);
@@ -72,8 +80,12 @@ export default function Header() {
     { name: "Real Estate", href: "/real-estate" },
     { name: "Construction", href: "/construction" },
     { name: "Beverages", href: "/liquor" },
+    { name: "Scrap", href: "/scrap-collection" },
     { name: "Contact", href: "/contact" },
   ];
+
+  const navActive = "#FFFFFF";
+  const navIdle = "rgba(255, 255, 255, 0.75)";
 
   const servicesList = [
     {
@@ -93,6 +105,12 @@ export default function Header() {
       desc: "Licensed distribution of premium alcoholic beverages across Bengaluru & Karnataka.",
       icon: "🍷",
       href: "/liquor",
+    },
+    {
+      title: "Scrap Solutions",
+      desc: "Doorstep scrap collection, vehicle disposal and recycling for homes, companies and Government.",
+      icon: "♻️",
+      href: "/scrap-collection",
     },
     {
       title: "Interior Architecture",
@@ -235,18 +253,18 @@ export default function Header() {
                             fontFamily: "'Plus Jakarta Sans', sans-serif",
                             fontSize: "0.875rem",
                             fontWeight: isActive ? 700 : 600,
-                            color: isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.75)",
+                            color: isActive ? navActive : navIdle,
                             textDecoration: "none",
                             whiteSpace: "nowrap",
                             padding: "4px 0",
                             transition: "color 0.2s ease",
                           }}
                           onMouseEnter={(e) => {
-                            (e.currentTarget as HTMLElement).style.color = "#FFFFFF";
+                            (e.currentTarget as HTMLElement).style.color = navActive;
                           }}
                           onMouseLeave={(e) => {
                             if (!isActive) {
-                              (e.currentTarget as HTMLElement).style.color = "rgba(255, 255, 255, 0.75)";
+                              (e.currentTarget as HTMLElement).style.color = navIdle;
                             }
                           }}
                         >
@@ -280,18 +298,18 @@ export default function Header() {
                         fontFamily: "'Plus Jakarta Sans', sans-serif",
                         fontSize: "0.875rem",
                         fontWeight: isActive ? 700 : 600,
-                        color: isActive ? "#FFFFFF" : "rgba(255, 255, 255, 0.75)",
+                        color: isActive ? navActive : navIdle,
                         textDecoration: "none",
                         whiteSpace: "nowrap",
                         padding: "4px 0",
                         transition: "color 0.2s ease",
                       }}
                       onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLElement).style.color = "#FFFFFF";
+                        (e.currentTarget as HTMLElement).style.color = navActive;
                       }}
                       onMouseLeave={(e) => {
                         if (!isActive) {
-                          (e.currentTarget as HTMLElement).style.color = "rgba(255, 255, 255, 0.75)";
+                          (e.currentTarget as HTMLElement).style.color = navIdle;
                         }
                       }}
                     >

@@ -6,7 +6,7 @@ interface PageHeroProps {
   label: string;
   title: string[];
   subtitle?: string;
-  videoUrl: string;
+  videoUrl?: string;
   posterUrl: string;
 }
 
@@ -19,7 +19,17 @@ export default function PageHero({ label, title, subtitle, videoUrl, posterUrl }
     >
       {/* Video */}
       <div className="absolute inset-0">
-        <video
+        {!videoUrl && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={posterUrl} alt="" className="w-full h-full object-cover" aria-hidden="true" />
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.8) 100%)" }}
+            />
+          </>
+        )}
+        {videoUrl && <video
           autoPlay
           muted
           loop
@@ -39,7 +49,7 @@ export default function PageHero({ label, title, subtitle, videoUrl, posterUrl }
           aria-hidden="true"
         >
           <source src={videoUrl} type="video/mp4" />
-        </video>
+        </video>}
       </div>
 
       {/* Content */}

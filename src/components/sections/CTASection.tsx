@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, Phone } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { siteConfig } from "@/data/siteData";
 
@@ -9,9 +9,10 @@ interface CTASectionProps {
   theme?: "dark" | "light"; // "light" = white background with dark text (default); "dark" = black background with light text
   heading?: string;
   body?: string;
+  showCall?: boolean;
 }
 
-export default function CTASection({ theme = "light", heading, body }: CTASectionProps) {
+export default function CTASection({ theme = "light", heading, body, showCall = false }: CTASectionProps) {
   const isDark = theme === "dark";
 
   return (
@@ -73,6 +74,29 @@ export default function CTASection({ theme = "light", heading, body }: CTASectio
                 <span>Book a free call</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
+
+              {showCall && (
+                <a
+                  href={`tel:${siteConfig.phone.replace(/\s/g, "")}`}
+                  className={`inline-flex items-center justify-center gap-2.5 transition-all duration-300 ${
+                    isDark ? "hover:bg-white/10" : "hover:bg-black/5"
+                  }`}
+                  style={{
+                    height: "56px",
+                    paddingInline: "28px",
+                    borderRadius: "100px",
+                    background: "transparent",
+                    border: isDark ? "1px solid rgba(255, 255, 255, 0.2)" : "1px solid rgba(0, 0, 0, 0.18)",
+                    color: isDark ? "#FFFFFF" : "#000000",
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    fontSize: "14.4px",
+                    fontWeight: 500,
+                  }}
+                >
+                  <Phone className={`w-4 h-4 ${isDark ? "text-white/60" : "text-black/60"}`} />
+                  <span>Call {siteConfig.phone}</span>
+                </a>
+              )}
 
               {/* Secondary Outline Button */}
               <a

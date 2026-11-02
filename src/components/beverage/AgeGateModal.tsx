@@ -93,7 +93,7 @@ export default function AgeGateModal() {
           >
 
             {/* Main Headline */}
-            <h1
+            <h2
               id="age-gate-title"
               style={{
                 fontFamily: "var(--font-plus-jakarta), sans-serif",
@@ -107,7 +107,7 @@ export default function AgeGateModal() {
               }}
             >
               You must be 18+ to enter
-            </h1>
+            </h2>
 
             {/* Action Buttons Row */}
             <div

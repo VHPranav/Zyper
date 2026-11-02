@@ -8,6 +8,7 @@ import {
   Building2,
   HardHat,
   Wine,
+  Recycle,
   ShieldCheck,
   CheckCircle2,
 } from "lucide-react";
@@ -186,7 +187,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 maxWidth: "420px",
               }}
             >
-              ZYPER Ventures works across real estate, construction, and beverages in Bengaluru. Different industries, one team, one way of doing things properly.
+              ZYPER Ventures works across real estate, construction, beverages, and scrap solutions in Bengaluru. Different industries, one team, one way of doing things properly.
             </p>
           </div>
 
@@ -208,6 +209,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
                 { label: "Real Estate", href: "/real-estate" },
                 { label: "Construction", href: "/construction" },
                 { label: "Beverages & Spirits", href: "/liquor" },
+                { label: "Scrap Solutions", href: "/scrap-collection" },
                 { label: "About Group", href: "/about" },
                 { label: "Capabilities & Services", href: "/#services" },
                 { label: "Contact Us", href: "/#contact" },
@@ -332,6 +334,7 @@ export default function Footer({ theme = "dark" }: FooterProps) {
               { Icon: Building2, label: "REAL ESTATE" },
               { Icon: HardHat, label: "CONSTRUCTION" },
               { Icon: Wine, label: "BEVERAGES" },
+              { Icon: Recycle, label: "SCRAP SOLUTIONS" },
               { Icon: CheckCircle2, label: "ISO CERTIFIED" },
               { Icon: ShieldCheck, label: "KARNATAKA OPERATIONAL" },
             ].map(({ Icon, label }) => (
